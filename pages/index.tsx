@@ -7,6 +7,10 @@ const Home: NextPage = () => {
 		display: flex;
 		justify-content: end;
 		width: 100vw;
+
+		@media (min-width: 500px) {
+			justify-content: center;
+		}
 	`;
 	const InnerContainer = styled.div`
 		display: flex;
@@ -14,6 +18,10 @@ const Home: NextPage = () => {
 		align-items: center;
 		height: 5rem;
 		width: 75%;
+
+		@media (min-width: 500px) {
+			width: 20%;
+		}
 	`;
 
 	const Img = styled.img`
@@ -28,7 +36,7 @@ const Home: NextPage = () => {
 		<>
 			<OuterContainer>
 				<InnerContainer>
-					<Img src='IMG_1463.jpeg' />
+					<Img src='images/IMG_1463.jpeg' />
 					<a href='mailto:tojmccann@gmail.com'>Contact</a>
 				</InnerContainer>
 			</OuterContainer>
