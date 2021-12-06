@@ -1,12 +1,5 @@
 import mongoose, { Schema } from 'mongoose';
-
-export interface ProjectTypes {
-	title: String;
-	description: String;
-	tools: String;
-	repository: String;
-	site: String;
-}
+import { ProjectTypes } from '../types/projectTypes';
 
 const ProjectSchema = new Schema<ProjectTypes>({
 	title: String,
@@ -14,6 +7,7 @@ const ProjectSchema = new Schema<ProjectTypes>({
 	tools: String,
 	repository: String,
 	site: String,
+	image: String,
 });
 
 export default mongoose.models.Projects ||
