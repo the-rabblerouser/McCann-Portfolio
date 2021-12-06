@@ -5,7 +5,7 @@ export const OuterContainer = styled.div`
 	justify-content: center;
 	width: 100vw;
 
-	@media (min-width: 500px) {
+	@media (min-width: 811px) {
 		justify-content: center;
 	}
 `;
@@ -15,9 +15,8 @@ export const InnerContainer = styled.div`
 	justify-content: space-evenly;
 	align-items: center;
 	height: 5rem;
-	width: 50%;
 
-	@media (min-width: 500px) {
+	@media (min-width: 811px) {
 		width: 20%;
 	}
 `;
