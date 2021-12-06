@@ -7,7 +7,7 @@ const index = () => {
 		<>
 			<OuterContainer>
 				<InnerContainer>
-					<Img src='images/IMG_1463.jpeg' />
+					<Img src='images/IMG_1463.png' />
 					<a href='mailto:tojmccann@gmail.com'>Contact</a>
 				</InnerContainer>
 			</OuterContainer>
