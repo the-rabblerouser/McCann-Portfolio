@@ -23,7 +23,6 @@ export const InnerContainer = styled.div`
 `;
 
 export const Img = styled.img`
-	border: 1px solid #fff;
 	height: 4rem;
 	width: 4rem;
 	margin: 5px;
