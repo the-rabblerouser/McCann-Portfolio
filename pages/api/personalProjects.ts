@@ -1,7 +1,7 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 
-import dbConnect from '../../utils/mongodb';
-import Project from '../../utils/models/ProjectSchema';
+import dbConnect from '../../lib/mongodb';
+import Project from '../../lib/models/ProjectSchema';
 
 export default async (req: NextApiRequest, res: NextApiResponse) => {
 	const { method } = req;
