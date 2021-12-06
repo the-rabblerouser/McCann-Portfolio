@@ -25,12 +25,19 @@ const Home: NextPage = () => {
 		}
 	`;
 
+	//  const Img = styled.img`
+	// height: 4rem;
+	// width: 4rem;
+	// margin: 5px;
+	// `;
+
 	return (
 		<>
 			<Particles id='tsparticles' options={particleOptions} />
 			<AppContainer>
 				<OuterContainer>
 					<Navbar />
+					{/* <Img src='images/IMG_1463.png' /> */}
 				</OuterContainer>
 			</AppContainer>
 		</>
