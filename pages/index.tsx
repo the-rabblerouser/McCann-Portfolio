@@ -35,8 +35,8 @@ const Home: NextPage = () => {
 		<>
 			<Particles id='tsparticles' options={particleOptions} />
 			<AppContainer>
+				<Navbar />
 				<OuterContainer>
-					<Navbar />
 					{/* <Img src='images/IMG_1463.png' /> */}
 				</OuterContainer>
 			</AppContainer>
