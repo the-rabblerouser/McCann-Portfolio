@@ -26,8 +26,8 @@ const OuterContainer = styled.div`
 `;
 
 const Img = styled.img`
-	height: 4rem;
-	width: 4rem;
+	height: 10rem;
+	width: 10rem;
 	margin: 5px;
 `;
 
