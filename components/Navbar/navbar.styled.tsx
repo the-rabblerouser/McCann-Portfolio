@@ -22,6 +22,13 @@ export const InnerContainer = styled.div`
 	}
 `;
 
+export const Projects = styled.button`
+	background: none;
+	border: none;
+	color: #fff;
+	font-size: 1.2rem;
+`;
+
 export const Contact = styled.a`
 	color: #fff;
 	font-size: 1.2rem;
