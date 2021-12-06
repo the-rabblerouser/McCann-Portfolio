@@ -30,6 +30,12 @@ const Img = styled.img`
 	height: 6rem;
 	width: 6rem;
 	margin: 5px;
+
+	@media (min-width: 811px) {
+		height: 10rem;
+		width: 10rem;
+		margin: 1rem;
+	}
 `;
 
 const Name = styled.p`
@@ -38,6 +44,10 @@ const Name = styled.p`
 	margin: 1rem 0 0 0;
 	text-align: center;
 	width: 100%;
+
+	@media (min-width: 811px) {
+		font-size: 4rem;
+	}
 `;
 
 const About = styled.p`
@@ -46,6 +56,10 @@ const About = styled.p`
 	margin: 1rem 0 0 0;
 	text-align: center;
 	width: 100%;
+
+	@media (min-width: 811px) {
+		font-size: 2rem;
+	}
 `;
 
 const Home: NextPage = () => {
