@@ -26,6 +26,7 @@ const AboutContainer = styled.div`
 	background: #c96567;
 
 	@media (min-width: 811px) {
+		height: 80vh;
 	}
 `;
 
@@ -37,7 +38,8 @@ const Paragraph = styled.p`
 	margin: 1rem 0 0 0;
 
 	@media (min-width: 811px) {
-		font-size: 4rem;
+		font-size: 2rem;
+		margin: 2rem 0 0 0;
 	}
 `;
 
@@ -51,6 +53,8 @@ const LinksContainer = styled.div`
 	width: 22rem;
 
 	@media (min-width: 811px) {
+		margin-top: 7rem;
+		width: 50%;
 	}
 `;
 
@@ -59,7 +63,7 @@ const MediaLink = styled.a`
 	font-size: 0.8rem;
 
 	@media (min-width: 811px) {
-		font-size: 2rem;
+		font-size: 1.6rem;
 	}
 `;
 
