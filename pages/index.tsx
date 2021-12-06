@@ -16,9 +16,10 @@ const AppContainer = styled.div`
 const OuterContainer = styled.div`
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	align-items: center;
+	justify-content: center;
 	height: 85vh;
+	width: 100vw;
 	// background: green;
 
 	@media (min-width: 811px) {
@@ -26,9 +27,25 @@ const OuterContainer = styled.div`
 `;
 
 const Img = styled.img`
-	height: 10rem;
-	width: 10rem;
+	height: 6rem;
+	width: 6rem;
 	margin: 5px;
+`;
+
+const Name = styled.p`
+	color: #fff;
+	font-size: 2rem;
+	margin: 1rem 0 0 0;
+	text-align: center;
+	width: 100%;
+`;
+
+const About = styled.p`
+	color: #fff;
+	font-size: 1rem;
+	margin: 1rem 0 0 0;
+	text-align: center;
+	width: 100%;
 `;
 
 const Home: NextPage = () => {
@@ -36,9 +53,11 @@ const Home: NextPage = () => {
 		<>
 			<Particles id='tsparticles' options={particleOptions} />
 			<AppContainer>
-				<Navbar />
+				{/* <Navbar /> */}
 				<OuterContainer>
 					<Img src='images/IMG_1463.png' />
+					<Name>I'm Joe McCann</Name>
+					<About>A Frontend Develoer based in New York City.</About>
 				</OuterContainer>
 			</AppContainer>
 		</>
