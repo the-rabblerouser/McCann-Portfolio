@@ -15,14 +15,15 @@ const AppContainer = styled.div`
 
 	}
 `;
-const OuterContainer = styled.div`
+
+const AboutContainer = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	height: 85vh;
+	height: 50vh;
 	width: 100vw;
-	// background: green;
+	background: #c96567;
 
 	@media (min-width: 811px) {
 	}
@@ -34,9 +35,10 @@ const Home: NextPage = () => {
 			<Particles id='tsparticles' options={particleOptions} />
 			<AppContainer>
 				{/* <Navbar /> */}
-				<OuterContainer>
-					<Hero />
-				</OuterContainer>
+
+				<Hero />
+
+				<AboutContainer></AboutContainer>
 			</AppContainer>
 		</>
 	);
