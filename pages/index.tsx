@@ -22,10 +22,11 @@ const Container = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	height: 50vh;
+	height: 20vh;
 	width: 100vw;
 
 	@media (min-width: 811px) {
+		height: 50vh;
 	}
 `;
 
