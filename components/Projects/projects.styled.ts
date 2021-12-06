@@ -20,7 +20,7 @@ export const Title = styled.p`
 	margin: 2rem 0 2rem 0;
 
 	@media (min-width: 811px) {
-		font-size: 1.5rem;
+		font-size: 1rem;
 		margin: 4rem 0 4rem 0;
 	}
 `;
@@ -29,12 +29,13 @@ export const ProjectsContainer = styled.div`
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 1fr 1fr 1fr;
-	height: 100vh;
+	height: 70vh;
 	width: 100vw;
 
 	@media (min-width: 811px) {
 		grid-template-columns: 1fr 1fr 1fr;
 		grid-template-rows: 1fr 1fr;
+		height: 100vh;
 	}
 `;
 
@@ -51,7 +52,7 @@ export const Project = styled.div<ProjectStyledProps>`
 export const ProjectMock = styled.div`
 	height: 100%;
 	width: 100%;
-	background-color: #97aabd;
+	background-color: #c96567;
 	border-bottom: 1px solid black;
 
 	@media (min-width: 811px) {
