@@ -2,12 +2,19 @@ import type { NextPage } from 'next';
 
 import styled from 'styled-components';
 import Particles from 'react-tsparticles';
+import useSWR from 'swr';
 
 // import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import AboutMe from '../components/AboutMe';
 
-import { particleOptions } from '../utils/particleOptions';
+import { particleOptions } from '../lib/utils/particleOptions';
+import { fetcher } from '../lib/utils/fetcher';
+import { ProjectTypes } from '../lib/types/projectTypes';
+
+interface ProjectComponentProps {
+	image: string;
+}
 
 const AppContainer = styled.div`
 	position: absolute;
@@ -44,24 +51,32 @@ const ProjectsContainer = styled.div`
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 1fr 1fr 1fr;
-	height: 80vh;
+	height: 60vh;
 	width: 100vw;
 
 	@media (min-width: 811px) {
 	}
 `;
 
-const Project = styled.div`
+const Project = styled.div<ProjectComponentProps>`
 	height: 100%;
 	width: 100%;
-	background: #fff;
-	border: 1px solid black;
+	background: url(${({ image }) => image}) no-repeat;
+	background-size: 100% 100%;
 
 	@media (min-width: 811px) {
 	}
 `;
 
 const Home: NextPage = () => {
+	const { data, error } = useSWR<ProjectTypes[]>(
+		'/api/personalProjects',
+		fetcher
+	);
+
+	if (error) return <div>failed to load</div>;
+	if (!data) return <></>;
+
 	return (
 		<>
 			<Particles id='tsparticles' options={particleOptions} />
@@ -72,12 +87,9 @@ const Home: NextPage = () => {
 				<Container>
 					<Title>Check out some of my personal projects</Title>
 					<ProjectsContainer>
-						<Project />
-						<Project />
-						<Project />
-						<Project />
-						<Project />
-						<Project />
+						{data.map(({ image }) => {
+							return <Project image={image}></Project>;
+						})}
 					</ProjectsContainer>
 				</Container>
 				<Container></Container>
