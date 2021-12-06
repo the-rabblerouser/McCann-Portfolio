@@ -1,13 +1,19 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-import type { NextApiRequest, NextApiResponse } from 'next'
+import type { NextApiRequest, NextApiResponse } from 'next';
 
-type Data = {
-  name: string
-}
+import dbConnect from '../../utils/mongodb';
+import Project from '../../utils/models/ProjectSchema';
 
-export default function handler(
-  req: NextApiRequest,
-  res: NextApiResponse<Data>
-) {
-  res.status(200).json({ name: 'John Doe' })
-}
+export default async (req: NextApiRequest, res: NextApiResponse) => {
+	const { method } = req;
+
+	if (method === 'GET') {
+		await dbConnect();
+
+		try {
+			const projects: {} = await Project.find({});
+			res.json(projects);
+		} catch (error) {
+			res.status(400).json({ success: false });
+		}
+	}
+};
