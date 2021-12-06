@@ -27,3 +27,8 @@ export const Img = styled.img`
 	width: 4rem;
 	margin: 5px;
 `;
+
+export const Contact = styled.a`
+	color: #fff;
+	font-size: 1.2rem;
+`;
