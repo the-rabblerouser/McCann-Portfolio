@@ -17,6 +17,18 @@ const AppContainer = styled.div`
 	}
 `;
 
+export const ProjectsContainer = styled.div`
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 90vh;
+	width: 100vw;
+
+	@media (min-width: 811px) {
+	}
+`;
+
 const Home: NextPage = () => {
 	return (
 		<>
@@ -25,6 +37,7 @@ const Home: NextPage = () => {
 				{/* <Navbar /> */}
 				<Hero />
 				<AboutMe />
+				<ProjectsContainer></ProjectsContainer>
 			</AppContainer>
 		</>
 	);
