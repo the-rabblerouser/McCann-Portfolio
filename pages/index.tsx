@@ -18,17 +18,18 @@ const OuterContainer = styled.div`
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	height: 95vh;
+	height: 85vh;
+	// background: green;
 
 	@media (min-width: 811px) {
 	}
 `;
 
-//  const Img = styled.img`
-// height: 4rem;
-// width: 4rem;
-// margin: 5px;
-// `;
+const Img = styled.img`
+	height: 4rem;
+	width: 4rem;
+	margin: 5px;
+`;
 
 const Home: NextPage = () => {
 	return (
@@ -37,7 +38,7 @@ const Home: NextPage = () => {
 			<AppContainer>
 				<Navbar />
 				<OuterContainer>
-					{/* <Img src='images/IMG_1463.png' /> */}
+					<Img src='images/IMG_1463.png' />
 				</OuterContainer>
 			</AppContainer>
 		</>
