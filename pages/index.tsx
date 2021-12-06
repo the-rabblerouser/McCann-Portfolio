@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import Particles from 'react-tsparticles';
 
 import Navbar from '../components/Navbar';
-import { options } from '../utils/particleOptions';
+import { particleOptions } from '../utils/particleOptions';
 
 const Home: NextPage = () => {
 	const AppContainer = styled.div`
@@ -16,7 +16,9 @@ const Home: NextPage = () => {
 	`;
 	const OuterContainer = styled.div`
 		display: flex;
-		justify-content: end;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 		height: 95vh;
 
 		@media (min-width: 811px) {
@@ -25,7 +27,7 @@ const Home: NextPage = () => {
 
 	return (
 		<>
-			<Particles id='tsparticles' options={options} />
+			<Particles id='tsparticles' options={particleOptions} />
 			<AppContainer>
 				<OuterContainer>
 					<Navbar />
