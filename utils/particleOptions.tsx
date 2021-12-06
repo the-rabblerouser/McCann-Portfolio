@@ -1,6 +1,6 @@
 import { RecursivePartial } from 'react-tsparticles';
 
-export const options: RecursivePartial<object> = {
+export const particleOptions: RecursivePartial<object> = {
 	fullScreen: {
 		enable: true,
 		zIndex: 0,
