@@ -68,6 +68,16 @@ const Project = styled.div<ProjectComponentProps>`
 	}
 `;
 
+const ProjectMock = styled.div`
+	height: 100%;
+	width: 100%;
+	background-color: #c96567;
+	border-bottom: 1px solid black;
+
+	@media (min-width: 811px) {
+	}
+`;
+
 const Home: NextPage = () => {
 	const { data, error } = useSWR<ProjectTypes[]>(
 		'/api/personalProjects',
@@ -90,6 +100,9 @@ const Home: NextPage = () => {
 						{data.map(({ image }) => {
 							return <Project image={image}></Project>;
 						})}
+						<ProjectMock />
+						<ProjectMock />
+						<ProjectMock />
 					</ProjectsContainer>
 				</Container>
 				<Container></Container>
