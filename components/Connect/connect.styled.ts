@@ -7,6 +7,7 @@ export const Container = styled.div`
 	height: 20vh;
 	width: 100vw;
 	margin-top: 4rem;
+	background-color: #9e5a63;
 
 	@media (min-width: 811px) {
 		height: 23vh;
