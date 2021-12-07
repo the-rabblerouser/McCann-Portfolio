@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import Particles from 'react-tsparticles';
 
 import Projects from '../components/Projects';
+import Connect from '../components/Connect';
 
 import { particleOptions } from '../lib/utils/particleOptions';
 
@@ -22,6 +23,7 @@ const projects: NextPage = () => {
 			<Particles id='tsparticles' options={particleOptions} />
 			<AppContainer>
 				<Projects />
+				<Connect background={'none'} />
 			</AppContainer>
 		</>
 	);
