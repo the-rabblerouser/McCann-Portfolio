@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { ProjectStyledProps } from '../../lib/types/projectStyledComponent';
+import { ProjectStyledProps } from '../../lib/types/projectStyledProps';
 
 export const Container = styled.div`
 	display: flex;
@@ -41,10 +41,12 @@ export const ProjectsContainer = styled.div`
 `;
 
 export const Project = styled.div<ProjectStyledProps>`
+	position: relative;
 	height: 100%;
 	width: 100%;
 	background: url(${({ image }) => image}) no-repeat;
 	background-size: 100% 100%;
+	border: none;
 
 	@media (min-width: 811px) {
 	}
