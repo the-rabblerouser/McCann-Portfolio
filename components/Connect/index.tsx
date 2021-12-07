@@ -9,10 +9,12 @@ import {
 	MediaLink,
 } from '../Connect/connect.styled';
 
-const index = () => {
+import { ConnectStyleProps } from '../../lib/types/connectStyleProps';
+
+const index = ({ background }: ConnectStyleProps) => {
 	return (
 		<>
-			<Container>
+			<Container background={background}>
 				<Connect>Feel free to reach out if you're looking to connect</Connect>
 				<Email href='mailto:tojmccann@gmail.com'>tojmccann@gmail.com</Email>
 				<LinksContainer>

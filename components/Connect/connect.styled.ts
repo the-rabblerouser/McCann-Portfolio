@@ -1,12 +1,14 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+import { ConnectStyleProps } from '../../lib/types/connectStyleProps';
+
+export const Container = styled.div<ConnectStyleProps>`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	height: 28vh;
 	width: 100vw;
-	background-color: #9e5a63;
+	background-color: ${(props) => props.background};
 
 	@media (min-width: 811px) {
 		height: 40vh;
