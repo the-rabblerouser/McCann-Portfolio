@@ -4,23 +4,23 @@ export const Container = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	height: 20vh;
+	height: 28vh;
 	width: 100vw;
-	margin-top: 4rem;
 	background-color: #9e5a63;
 
 	@media (min-width: 811px) {
-		height: 23vh;
-		margin-top: 6rem;
+		height: 40vh;
 	}
 `;
 
 export const Connect = styled.p`
 	color: #fff;
 	font-size: 0.8rem;
+	padding-top: 4rem;
 
 	@media (min-width: 811px) {
 		font-size: 1.2rem;
+		padding-top: 6rem;
 	}
 `;
 
