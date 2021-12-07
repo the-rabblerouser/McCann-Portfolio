@@ -51,3 +51,38 @@ export const Project = styled.div<ProjectStyledProps>`
 	@media (min-width: 811px) {
 	}
 `;
+
+// Styled Components for Projects Button on Home Page
+
+export const ProjectsButtonContainer = styled.div`
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 20vh;
+	width: 100vw;
+
+	@media (min-width: 811px) {
+		height: 80vh;
+	}
+`;
+
+export const ProjectsButton = styled.a`
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	font-size: 0.8rem;
+	background-color: #97aabd;
+	border: none;
+	height: 3rem;
+	width: 8rem;
+	box-shadow: 6px 5px #000;
+	cursor: pointer;
+
+	@media (min-width: 811px) {
+		font-size: 1rem;
+		height: 4rem;
+		width: 12rem;
+	}
+`;

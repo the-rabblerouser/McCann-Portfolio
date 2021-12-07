@@ -6,10 +6,8 @@ export const Container = styled.div<ConnectStyledProps>`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	height: 28vh;
+	height: 20vh;
 	width: 100vw;
-	background-color: ${(props) => props.background};
-
 	@media (min-width: 811px) {
 		height: 40vh;
 	}
@@ -18,7 +16,7 @@ export const Container = styled.div<ConnectStyledProps>`
 export const Connect = styled.p`
 	color: #fff;
 	font-size: 0.8rem;
-	padding-top: 4rem;
+	padding-top: 0rem;
 
 	@media (min-width: 811px) {
 		font-size: 1.2rem;
