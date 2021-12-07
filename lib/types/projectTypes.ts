@@ -1,8 +1,9 @@
 export interface ProjectTypes {
-	title: string;
+	_id: string;
 	description: string;
-	tools: string;
-	repository: string;
-	site: string;
 	image: string;
+	repository: string;
+	site?: string;
+	title: string;
+	tools: string;
 }

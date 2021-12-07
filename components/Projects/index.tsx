@@ -8,14 +8,16 @@ import {
 	Title,
 	ProjectsContainer,
 	Project,
-	ProjectMock,
 } from '../Projects/projects.styled';
+
+import Modal from './Modal';
 
 import { fetcher } from '../../lib/utils/fetcher';
 import { ProjectTypes } from '../../lib/types/projectTypes';
 
 const index = () => {
 	const [showModal, setshowModal] = useState<boolean>(false);
+	const [projectData, setprojectData] = useState<{}>({});
 
 	const transitions = useTransition(showModal, {
 		from: { opacity: 0 },
@@ -45,25 +47,29 @@ const index = () => {
 			<Container>
 				<Title>Check out some of my personal projects</Title>
 				<ProjectsContainer>
-					{data.map(({ image }) => {
+					{data.map((item) => {
 						return (
-							<div key={image}>
-								<Project image={image} onClick={() => setshowModal(true)} />
-
-								{transitions(
-									(styles, item) =>
-										item && (
-											<animated.div
-												style={styles}
-												onClick={() => setshowModal(false)}></animated.div>
-										)
-								)}
+							<div key={item.title}>
+								<Project
+									image={item.image}
+									onClick={() => {
+										setprojectData(item);
+										setshowModal(true);
+									}}
+								/>
 							</div>
 						);
 					})}
-					{/* <ProjectMock />
-					<ProjectMock />
-					<ProjectMock /> */}
+					{transitions(
+						(styles, item) =>
+							item && (
+								<Modal
+									styles={styles}
+									data={projectData}
+									onClose={() => setshowModal(false)}
+								/>
+							)
+					)}
 				</ProjectsContainer>
 			</Container>
 		</>

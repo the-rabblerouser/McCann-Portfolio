@@ -51,13 +51,3 @@ export const Project = styled.div<ProjectStyledProps>`
 	@media (min-width: 811px) {
 	}
 `;
-
-export const ProjectMock = styled.div`
-	height: 100%;
-	width: 100%;
-	background-color: #c96567;
-	border-bottom: 1px solid black;
-
-	@media (min-width: 811px) {
-	}
-`;
