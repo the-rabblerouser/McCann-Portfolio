@@ -65,7 +65,7 @@ const Home: NextPage = () => {
 						<Button>View Projects</Button>
 					</Link>
 				</Container>
-				<Connect />
+				<Connect background={'#9e5a63'} />
 			</AppContainer>
 		</>
 	);

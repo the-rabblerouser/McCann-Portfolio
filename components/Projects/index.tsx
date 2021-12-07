@@ -28,7 +28,7 @@ const index = () => {
 				<Title>Check out some of my personal projects</Title>
 				<ProjectsContainer>
 					{data.map(({ image }) => {
-						return <Project image={image}></Project>;
+						return <Project key={image} image={image}></Project>;
 					})}
 					<ProjectMock />
 					<ProjectMock />
