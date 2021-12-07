@@ -21,12 +21,20 @@ const ModalMain = styled.div`
 	justify-content: bottom;
 	align-items: center;
 	background-color: #9e5a63;
-	border: 1px solid black;
+
+	@media (min-width: 811px) {
+		height: 58vh;
+		width: 45vw;
+	}
 `;
 
 const Image = styled.img`
 	height: 180px;
 	width: 100%;
+
+	@media (min-width: 811px) {
+		height: 35vh;
+	}
 `;
 
 const Title = styled.p`
@@ -35,6 +43,10 @@ const Title = styled.p`
 	text-align: left;
 	width: 100%;
 	margin: 0.3rem 0 0 1rem;
+
+	@media (min-width: 811px) {
+		margin: 1rem 0 0 2rem;
+	}
 `;
 
 const Tools = styled.p`
@@ -43,36 +55,33 @@ const Tools = styled.p`
 	text-align: left;
 	width: 100%;
 	margin: 0 0 0 1rem;
+
+	@media (min-width: 811px) {
+		margin: 0 0 0 2rem;
+	}
 `;
 
 const Hr = styled.hr`
 	width: 350px;
 	color: #fff;
 	margin: 0.8rem 0 0 0;
+
+	@media (min-width: 811px) {
+		width: 43vw;
+		margin: 0.8rem 0 0 0;
+	}
 `;
 
-const Description = styled.p`
+const ModalDescription = styled.p`
 	color: #fff;
 	font-size: 0.8rem;
 	text-align: left;
 	width: 100%;
 	margin: 1rem 0 0 1rem;
-`;
 
-const Code = styled.p`
-	color: #fff;
-	font-size: 0.8rem;
-	text-align: left;
-	width: 100%;
-	margin: 1rem 0 0 1rem;
-`;
-
-const Site = styled.p`
-	color: #fff;
-	font-size: 0.8rem;
-	text-align: left;
-	width: 100%;
-	margin: 1rem 0 0 1rem;
+	@media (min-width: 811px) {
+		margin: 1.8rem 0 0 2rem;
+	}
 `;
 
 const index = ({
@@ -88,14 +97,14 @@ const index = ({
 					<Title>{title}</Title>
 					<Tools>{tools}</Tools>
 
-					<Description>{description}</Description>
+					<ModalDescription>{description}</ModalDescription>
 					<Hr />
-					<Code>
+					<ModalDescription>
 						Code: <a href={repository}>{repository}</a>
-					</Code>
-					<Site>
+					</ModalDescription>
+					<ModalDescription>
 						Website: <a href={site}>{site} </a>
-					</Site>
+					</ModalDescription>
 				</ModalMain>
 			</ModalContainer>
 		</animated.div>
