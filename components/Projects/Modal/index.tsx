@@ -2,6 +2,7 @@ import React from 'react';
 
 import styled from 'styled-components';
 import { animated } from 'react-spring';
+import { ModalProps } from './ModalPropTypes';
 
 const ModalContainer = styled.div`
 	display: flex;
@@ -28,30 +29,27 @@ const Image = styled.img`
 	width: 100%;
 `;
 
-interface ModalProps {
-	styles: object;
-	onClose: () => void;
-	data: {
-		_id?: string;
-		description?: string;
-		image?: string;
-		repository?: string;
-		site?: string;
-		title?: string;
-		tools?: string;
-	};
-}
+const Title = styled.p`
+	text-align: left;
+	width: 100%;
+	margin-left: 1rem;
+`;
 
-const Modal = ({ styles, onClose, data }: ModalProps) => {
+const index = ({
+	styles,
+	onClose,
+	data: { image, description, title, repository, site, tools },
+}: ModalProps) => {
 	return (
 		<animated.div style={styles} onClick={onClose}>
 			<ModalContainer>
 				<ModalMain>
-					<Image src={data.image} />
+					<Image src={image} />
+					<Title>{title}</Title>
 				</ModalMain>
 			</ModalContainer>
 		</animated.div>
 	);
 };
 
-export default Modal;
+export default index;

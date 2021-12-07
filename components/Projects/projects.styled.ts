@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { ProjectStyledProps } from '../../lib/types/projectStyledProps';
+import { ProjectStyledProps } from './types/projectStyledProps';
 
 export const Container = styled.div`
 	display: flex;

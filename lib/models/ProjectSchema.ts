@@ -1,5 +1,5 @@
 import mongoose, { Schema } from 'mongoose';
-import { ProjectTypes } from '../types/projectTypes';
+import { ProjectTypes } from '../../components/Projects/types/projectTypes';
 
 const ProjectSchema = new Schema<ProjectTypes>({
 	title: String,

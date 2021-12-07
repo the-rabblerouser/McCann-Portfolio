@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import useSWR from 'swr';
-import { useTransition, animated } from 'react-spring';
+import { useTransition } from 'react-spring';
 
 import {
 	Container,
@@ -13,7 +13,7 @@ import {
 import Modal from './Modal';
 
 import { fetcher } from '../../lib/utils/fetcher';
-import { ProjectTypes } from '../../lib/types/projectTypes';
+import { ProjectTypes } from './types/projectTypes';
 
 const index = () => {
 	const [showModal, setshowModal] = useState<boolean>(false);

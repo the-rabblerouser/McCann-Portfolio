@@ -9,9 +9,9 @@ import {
 	MediaLink,
 } from '../Connect/connect.styled';
 
-import { ConnectStyleProps } from '../../lib/types/connectStyleProps';
+import { ConnectStyledProps } from './connectStyledProps';
 
-const index = ({ background }: ConnectStyleProps) => {
+const index = ({ background }: ConnectStyledProps) => {
 	return (
 		<>
 			<Container background={background}>

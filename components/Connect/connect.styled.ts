@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
-import { ConnectStyleProps } from '../../lib/types/connectStyleProps';
+import { ConnectStyledProps } from './connectStyledProps';
 
-export const Container = styled.div<ConnectStyleProps>`
+export const Container = styled.div<ConnectStyledProps>`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
