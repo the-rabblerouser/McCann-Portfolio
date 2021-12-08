@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useRouter } from 'next/router';
+
+import { useSpring } from 'react-spring';
 
 import {
 	OuterContainer,
@@ -14,19 +16,24 @@ import {
 const index = () => {
 	const router = useRouter();
 
+	const [toggle, setToggle] = useState<boolean>(false);
+
+	const styles = useSpring({ opacity: toggle ? 1 : 0 });
+
 	const href = router.pathname === '/projects' ? '/' : '/projects';
 	const link = router.pathname === '/projects' ? 'Home' : 'Projects';
 
 	return (
 		<>
 			<OuterContainer>
-				<InnerContainer>
-					<Diamond
-						onMouseEnter={() => set(true)}
-						onMouseLeave={() => set(false)}>
-						<DiamondText style={{}}>J</DiamondText>
+				<InnerContainer
+					onMouseEnter={() => setToggle(true)}
+					onMouseLeave={() => setToggle(false)}>
+					<Diamond>
+						<DiamondText>J</DiamondText>
 					</Diamond>
-					<NavLinks>
+
+					<NavLinks style={styles}>
 						<Projects href={href}>{link}</Projects>
 						<Contact href='mailto:tojmccann@gmail.com'>Contact</Contact>
 					</NavLinks>

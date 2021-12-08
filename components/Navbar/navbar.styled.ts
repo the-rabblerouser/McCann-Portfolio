@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+import { animated } from 'react-spring';
+
 export const OuterContainer = styled.div`
 	display: flex;
 	justify-content: center;
@@ -44,7 +46,6 @@ export const Diamond = styled.div`
 	@media (min-width: 811px) {
 		height: 2.5rem;
 		width: 2.5rem;
-		margin: 5rem 0 0 0;
 	}
 `;
 
@@ -64,21 +65,22 @@ export const DiamondText = styled.span`
 	}
 `;
 
-export const NavLinks = styled.div`
+export const NavLinks = styled(animated.div)`
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: center;
 	align-items: center;
 	width: 60%;
 	height: 100%;
-	transition-duration: 1s;
-	transform: translateX(-400px);
+	transition: transform 0.7s, opacity 0.1s;
+
+	transform: translateX(30px);
 
 	${InnerContainer}:hover & {
 		transform: translateX(0px);
 	}
 
 	@media (min-width: 811px) {
-		width: 15vw;
+		justify-content: end;
 	}
 `;
 
@@ -87,15 +89,21 @@ export const Projects = styled.a`
 	border: none;
 	color: #fff;
 	font-size: 1rem;
+	margin-left: 8rem;
 
 	@media (min-width: 811px) {
+		margin-left: 10rem;
 	}
 `;
 
 export const Contact = styled.a`
 	color: #fff;
 	font-size: 1rem;
+	margin-left: 3rem;
+	margin-right: 4rem;
 
 	@media (min-width: 811px) {
+		margin-left: 4rem;
+		margin-right: -8rem;
 	}
 `;
