@@ -73,7 +73,7 @@ export const NavLinks = styled(animated.div)`
 	height: 100%;
 
 	@media (min-width: 811px) {
-		justify-content: end;
+		justify-content: -webkit-end;
 		transition: transform 0.7s, opacity 0.1s;
 		transform: translateX(30px);
 
@@ -119,5 +119,6 @@ export const Contact = styled.a`
 	@media (min-width: 811px) {
 		margin-left: 4rem;
 		margin-right: -4rem;
+		-webkit-margin-end: -40rem;
 	}
 `;

@@ -16,7 +16,7 @@ export const ModalMain = styled.div`
 	justify-content: start;
 	align-items: start;
 	background-color: ${({ theme }) => theme.teriary};
-	height: 50%;
+	height: 55%;
 	width: 95%;
 
 	@media (min-width: 811px) {
