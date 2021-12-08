@@ -4,7 +4,7 @@ export const OuterContainer = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 5rem;
+	height: 2rem;
 	width: 100vw;
 
 	@media (min-width: 811px) {
@@ -17,6 +17,7 @@ export const InnerContainer = styled.div`
 	justify-content: end;
 	align-items: center;
 	width: 80vw;
+	margin-top: 5rem;
 
 	@media (min-width: 811px) {
 		display: flex;
@@ -32,7 +33,6 @@ export const Projects = styled.a`
 	font-size: 1.2rem;
 
 	@media (min-width: 811px) {
-		font-size: 2rem;
 	}
 `;
 
@@ -41,6 +41,5 @@ export const Contact = styled.a`
 	font-size: 1.2rem;
 
 	@media (min-width: 811px) {
-		font-size: 2rem;
 	}
 `;

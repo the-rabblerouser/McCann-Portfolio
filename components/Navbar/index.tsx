@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useRouter } from 'next/router';
 
 import styled from 'styled-components';
 
@@ -32,33 +33,42 @@ const Diamond = styled.div`
 	align-items: center;
 	height: 30px;
 	width: 30px;
-	margin-right: 1rem;
+	margin: 5rem 3rem 0 0;
 	text-align: center;
 	transform: rotate(45deg);
 	background: #97aabd;
 	box-shadow: 7px 4px #000;
+	cursor: pointer;
 
 	@media (min-width: 811px) {
+		height: 2.5rem;
+		width: 2.5rem;
 	}
 `;
 
-const DiamondText = styled.p`
+const DiamondText = styled.span`
 	transform: rotate(-45deg);
 	color: #fff;
 	fontsize: 1.5rem;
+	cursor: pointer;
 
 	@media (min-width: 811px) {
 	}
 `;
 
 const index = () => {
+	const router = useRouter();
+
 	const [isVisible, set] = useState<boolean>(false);
 
 	const props = useSpring({
-		transform: isVisible ? 'translateX(0px)' : 'translateX(50px)',
+		transform: isVisible ? 'translateX(0px)' : 'translateX(90px)',
 		opacity: isVisible ? 1 : 0,
-		config: config.gentle,
+		config: config.stiff,
 	});
+
+	const href = router.pathname === '/projects' ? '/' : '/projects';
+	const link = router.pathname === '/projects' ? 'Home' : 'Projects';
 
 	return (
 		<>
@@ -67,7 +77,7 @@ const index = () => {
 					<animated.div style={props}>
 						{isVisible ? (
 							<NavLinks>
-								<Projects href='/projects'>Projects</Projects>
+								<Projects href={href}>{link}</Projects>
 								<Contact href='mailto:tojmccann@gmail.com'>Contact</Contact>
 							</NavLinks>
 						) : null}
