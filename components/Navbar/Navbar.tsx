@@ -13,7 +13,7 @@ import {
 	Contact,
 } from './navbar.styled';
 
-const index = () => {
+const Navbar = () => {
 	const router = useRouter();
 
 	const [toggle, setToggle] = useState<boolean>(false);
@@ -44,4 +44,4 @@ const index = () => {
 	);
 };
 
-export default index;
+export default Navbar;

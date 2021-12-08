@@ -4,9 +4,9 @@ import React from 'react';
 import styled from 'styled-components';
 import Particles from 'react-tsparticles';
 
-import Navbar from '../components/Navbar';
-import Projects from '../components/Projects';
-import Connect from '../components/Connect';
+import Navbar from '../components/Navbar/Navbar';
+import Projects from '../components/Projects/Projects';
+import Connect from '../components/Connect/Connect';
 
 import { particleOptions } from '../lib/utils/particleOptions';
 

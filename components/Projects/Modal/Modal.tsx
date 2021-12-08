@@ -15,7 +15,7 @@ import {
 
 import { ModalProps } from './ModalPropTypes';
 
-const index = ({
+const Modal = ({
 	styles,
 	onClose,
 	data: { image, description, title, repository, site, tools },
@@ -41,4 +41,4 @@ const index = ({
 	);
 };
 
-export default index;
+export default Modal;

@@ -13,7 +13,7 @@ export const Container = styled.div<ConnectStyledProps>`
 	}
 `;
 
-export const Connect = styled.p`
+export const ConnectParagraph = styled.p`
 	color: ${({ theme }) => theme.white};
 	font-size: 1rem;
 

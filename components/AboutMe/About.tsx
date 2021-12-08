@@ -5,9 +5,9 @@ import {
 	Paragraph,
 	LinksContainer,
 	MediaLink,
-} from '../AboutMe/aboutme.styled';
+} from './aboutme.styled';
 
-const index = () => {
+const About = () => {
 	return (
 		<>
 			<AboutContainer>
@@ -35,4 +35,4 @@ const index = () => {
 	);
 };
 
-export default index;
+export default About;

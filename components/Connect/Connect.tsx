@@ -2,20 +2,20 @@ import React from 'react';
 
 import {
 	Container,
-	Connect,
+	ConnectParagraph,
 	Email,
 	LinksContainer,
 	Brand,
 	MediaLink,
-} from '../Connect/connect.styled';
+} from './connect.styled';
 
 import { ConnectStyledProps } from './connectStyledProps';
 
-const index = ({ background }: ConnectStyledProps) => {
+const Connect = ({ background }: ConnectStyledProps) => {
 	return (
 		<>
 			<Container background={background}>
-				<Connect>Lets Build Something Together</Connect>
+				<ConnectParagraph>Lets Build Something Together</ConnectParagraph>
 				<Email href='mailto:tojmccann@gmail.com'>tojmccann@gmail.com</Email>
 				<LinksContainer>
 					<Brand>Joe McCann {new Date().getFullYear()}</Brand>
@@ -31,4 +31,4 @@ const index = ({ background }: ConnectStyledProps) => {
 	);
 };
 
-export default index;
+export default Connect;

@@ -2,7 +2,7 @@ import React from 'react';
 
 import { OuterContainer, Img, Name, About } from './hero.styled';
 
-const index = () => {
+const Hero = () => {
 	return (
 		<>
 			<OuterContainer>
@@ -15,4 +15,4 @@ const index = () => {
 	);
 };
 
-export default index;
+export default Hero;

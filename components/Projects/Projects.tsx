@@ -8,14 +8,14 @@ import {
 	Title,
 	ProjectsContainer,
 	Project,
-} from '../Projects/projects.styled';
+} from './projects.styled';
 
-import Modal from './Modal';
+import Modal from './Modal/Modal';
 
 import { fetcher } from '../../lib/utils/fetcher';
 import { ProjectTypes } from './types/projectTypes';
 
-const index = () => {
+const Projects = () => {
 	const [showModal, setshowModal] = useState<boolean>(false);
 	const [projectData, setprojectData] = useState<{}>({});
 
@@ -74,4 +74,4 @@ const index = () => {
 	);
 };
 
-export default index;
+export default Projects;
