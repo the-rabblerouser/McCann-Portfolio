@@ -5,7 +5,7 @@ export const OuterContainer = styled.div`
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	height: 95vh;
+	height: 90vh;
 	width: 100vw;
 	// background: green;
 
@@ -14,8 +14,8 @@ export const OuterContainer = styled.div`
 `;
 
 export const Img = styled.img`
-	height: 6rem;
-	width: 6rem;
+	height: 7rem;
+	width: 7rem;
 	margin: 5px;
 
 	@media (min-width: 811px) {
@@ -33,7 +33,6 @@ export const Name = styled.p`
 	width: 100%;
 
 	@media (min-width: 811px) {
-		font-size: 4rem;
 	}
 `;
 
@@ -45,6 +44,5 @@ export const About = styled.p`
 	width: 100%;
 
 	@media (min-width: 811px) {
-		font-size: 2rem;
 	}
 `;
