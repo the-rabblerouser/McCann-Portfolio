@@ -6,7 +6,7 @@ export const OuterContainer = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 5rem;
+	height: 10vh;
 	width: 100vw;
 
 	@media (min-width: 811px) {
@@ -104,6 +104,6 @@ export const Contact = styled.a`
 
 	@media (min-width: 811px) {
 		margin-left: 4rem;
-		margin-right: -8rem;
+		margin-right: -4rem;
 	}
 `;

@@ -12,13 +12,14 @@ const index = () => {
 		<>
 			<AboutContainer>
 				<Paragraph>
-					I am a fullstack web devloper who focus is on the frontend.
+					I am a fullstack Web Devloper with a focus frontend development.
 				</Paragraph>
 				<Paragraph>
-					My preferred tools are React, Next.js, MongoDB and Node.js.
+					My preferred tools are Typescript, React.js, Next.js, Node.js, and
+					MongoDB.
 				</Paragraph>
 				<Paragraph>
-					I am currently living in NYC and looking for work.
+					I am currently living in NYC and looking to join a new team.
 				</Paragraph>
 				<LinksContainer>
 					<MediaLink href='mailto:tojmccann@gmail.com'>Email</MediaLink>

@@ -7,8 +7,9 @@ const index = () => {
 		<>
 			<OuterContainer>
 				<Img src='images/IMG_1463.png' />
-				<Name>I'm Joe McCann</Name>
-				<About>A Frontend Develoer based in New York City.</About>
+				<Name>Hi, I'm Joe.</Name>
+				<About>A Software Developer</About>
+				<About>based in New York City.</About>
 			</OuterContainer>
 		</>
 	);

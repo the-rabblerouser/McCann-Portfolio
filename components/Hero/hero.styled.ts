@@ -4,12 +4,12 @@ export const OuterContainer = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
-	height: 85vh;
+	justify-content: start;
+	height: 40vh;
 	width: 100vw;
+	margin-top: 5vh;
 
 	@media (min-width: 811px) {
-		height: 85vh;
 	}
 `;
 
@@ -19,8 +19,6 @@ export const Img = styled.img`
 	margin: 5px;
 
 	@media (min-width: 811px) {
-		height: 10rem;
-		width: 10rem;
 		margin: 1rem;
 	}
 `;
@@ -38,7 +36,7 @@ export const Name = styled.p`
 
 export const About = styled.p`
 	color: #fff;
-	font-size: 1rem;
+	font-size: 0.9rem;
 	margin: 1rem 0 0 0;
 	text-align: center;
 	width: 100%;
