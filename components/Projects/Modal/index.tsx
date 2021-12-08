@@ -27,7 +27,6 @@ const index = ({
 					<Image src={image} />
 					<Title>{title}</Title>
 					<Tools>{tools}</Tools>
-
 					<ModalDescription>{description}</ModalDescription>
 					<Hr />
 					<ModalDescription>

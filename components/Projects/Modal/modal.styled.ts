@@ -9,17 +9,19 @@ export const ModalContainer = styled.div`
 `;
 
 export const ModalMain = styled.div`
-	height: 23rem;
+	height: 24rem;
 	width: 22rem;
 	display: flex;
 	flex-direction: column;
-	justify-content: bottom;
-	align-items: center;
+	justify-content: start;
+	align-items: start;
 	background-color: #314455;
+	height: 45%;
+	width: 95%;
 
 	@media (min-width: 811px) {
-		height: 35rem;
-		width: 44rem;
+		height: 65%;
+		width: 55%;
 	}
 `;
 
@@ -37,10 +39,10 @@ export const Title = styled.p`
 	font-size: 1.5rem;
 	text-align: left;
 	width: 100%;
-	margin: 0.3rem 0 0 1rem;
+	margin: 0.4rem;
 
 	@media (min-width: 811px) {
-		margin: 1rem 0 0 2rem;
+		margin: 0.7rem;
 	}
 `;
 
@@ -49,20 +51,19 @@ export const Tools = styled.p`
 	font-size: 0.8rem;
 	text-align: left;
 	width: 100%;
-	margin: 0 0 0 1rem;
+	margin: 0.4rem;
 
 	@media (min-width: 811px) {
-		margin: 0 0 0 2rem;
+		margin: 0.7rem;
 	}
 `;
 
 export const Hr = styled.hr`
-	width: 95%;
+	align-self: center;
+	width: 97%;
 	color: #fff;
-	margin: 0.8rem 0 0 0;
 
 	@media (min-width: 811px) {
-		margin: 0.8rem 0 0 0;
 	}
 `;
 
@@ -70,11 +71,11 @@ export const ModalDescription = styled.p`
 	color: #fff;
 	font-size: 0.8rem;
 	text-align: left;
-	width: 90vw;
-	margin: 1rem 0 0 1rem;
+	width: 90%;
+	margin: 0.4rem;
 
 	@media (min-width: 811px) {
-		margin: 1.8rem 0 0 2rem;
+		margin: 0.7rem;
 		width: 80vw;
 	}
 `;
