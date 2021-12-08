@@ -5,7 +5,7 @@ export const AboutContainer = styled.div`
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	height: 35vh;
+	height: 40vh;
 	width: 100vw;
 	background: ${({ theme }) => theme.primary};
 

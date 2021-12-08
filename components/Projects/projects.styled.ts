@@ -6,7 +6,7 @@ export const Container = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	height: 90vh;
+	height: 80vh;
 	width: 100vw;
 
 	@media (min-width: 811px) {
@@ -18,11 +18,11 @@ export const Title = styled.p`
 	color: ${({ theme }) => theme.white};
 	font-size: 0.8rem;
 	text-align: center;
-	margin: 2rem 0 1rem 0;
+	margin: 1rem 0 1rem 0;
 
 	@media (min-width: 811px) {
 		font-size: 1.5rem;
-		margin: 4rem 0 1rem 0;
+		margin: 0rem 0 1rem 0;
 	}
 `;
 
@@ -36,7 +36,7 @@ export const ProjectsContainer = styled.div`
 	@media (min-width: 811px) {
 		grid-template-columns: 1fr 1fr 1fr;
 		grid-template-rows: 1fr 1fr;
-		height: 100vh;
+		height: 85vh;
 	}
 `;
 

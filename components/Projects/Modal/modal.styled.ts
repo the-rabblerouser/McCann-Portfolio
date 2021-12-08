@@ -16,12 +16,12 @@ export const ModalMain = styled.div`
 	justify-content: start;
 	align-items: start;
 	background-color: ${({ theme }) => theme.teriary};
-	height: 45%;
+	height: 50%;
 	width: 95%;
 
 	@media (min-width: 811px) {
 		height: 65%;
-		width: 55%;
+		width: 40%;
 	}
 `;
 
