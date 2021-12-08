@@ -14,8 +14,9 @@ export const OuterContainer = styled.div`
 
 export const InnerContainer = styled.div`
 	display: flex;
-	justify-content: space-evenly;
-	width: 100vw;
+	justify-content: end;
+	align-items: center;
+	width: 80vw;
 
 	@media (min-width: 811px) {
 		display: flex;
@@ -24,7 +25,7 @@ export const InnerContainer = styled.div`
 	}
 `;
 
-export const Projects = styled.button`
+export const Projects = styled.a`
 	background: none;
 	border: none;
 	color: #fff;
