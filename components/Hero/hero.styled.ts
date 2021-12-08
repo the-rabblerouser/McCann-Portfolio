@@ -10,6 +10,7 @@ export const OuterContainer = styled.div`
 	// background: green;
 
 	@media (min-width: 811px) {
+		height: 90vh;
 	}
 `;
 

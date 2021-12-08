@@ -8,6 +8,7 @@ export const Container = styled.div`
 	align-items: center;
 	height: 80vh;
 	width: 100vw;
+	margin-top: 5rem;
 
 	@media (min-width: 811px) {
 		height: 100vh;
@@ -18,11 +19,11 @@ export const Title = styled.p`
 	color: #fff;
 	font-size: 0.8rem;
 	text-align: center;
-	margin: 2rem 0 2rem 0;
+	margin: 2rem 0 1rem 0;
 
 	@media (min-width: 811px) {
-		font-size: 1rem;
-		margin: 4rem 0 4rem 0;
+		font-size: 1.5rem;
+		margin: 4rem 0 1rem 0;
 	}
 `;
 
@@ -63,7 +64,7 @@ export const ProjectsButtonContainer = styled.div`
 	width: 100vw;
 
 	@media (min-width: 811px) {
-		height: 80vh;
+		height: 35vh;
 	}
 `;
 

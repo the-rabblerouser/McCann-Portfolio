@@ -9,18 +9,16 @@ export const Container = styled.div<ConnectStyledProps>`
 	height: 20vh;
 	width: 100vw;
 	@media (min-width: 811px) {
-		height: 40vh;
+		height: 20vh;
 	}
 `;
 
 export const Connect = styled.p`
 	color: #fff;
 	font-size: 0.8rem;
-	padding-top: 0rem;
 
 	@media (min-width: 811px) {
 		font-size: 1.2rem;
-		padding-top: 6rem;
 	}
 `;
 

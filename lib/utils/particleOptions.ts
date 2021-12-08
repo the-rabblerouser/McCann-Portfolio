@@ -77,7 +77,7 @@ export const particleOptions: RecursivePartial<object> = {
 		},
 		size: {
 			random: true,
-			value: 1,
+			value: 3,
 		},
 	},
 	detectRetina: true,
