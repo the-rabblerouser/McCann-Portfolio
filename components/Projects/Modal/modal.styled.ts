@@ -2,16 +2,18 @@ import styled from 'styled-components';
 
 export const ModalContainer = styled.div`
 	display: flex;
-	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	height: 100%;
-	width: 100%;
+	height: 100vh;
+	width: 100vw;
+	position: fixed;
+	overflow-x: hidden;
+	overflow-y: hidden !important;
 `;
 
 export const ModalMain = styled.div`
-	height: 370px;
-	width: 370px;
+	height: 23rem;
+	width: 22rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: bottom;
@@ -19,8 +21,8 @@ export const ModalMain = styled.div`
 	background-color: #9e5a63;
 
 	@media (min-width: 811px) {
-		height: 58vh;
-		width: 45vw;
+		height: 35rem;
+		width: 44rem;
 	}
 `;
 
@@ -58,12 +60,11 @@ export const Tools = styled.p`
 `;
 
 export const Hr = styled.hr`
-	width: 350px;
+	width: 95%;
 	color: #fff;
 	margin: 0.8rem 0 0 0;
 
 	@media (min-width: 811px) {
-		width: 43vw;
 		margin: 0.8rem 0 0 0;
 	}
 `;
@@ -72,10 +73,11 @@ export const ModalDescription = styled.p`
 	color: #fff;
 	font-size: 0.8rem;
 	text-align: left;
-	width: 100%;
+	width: 90vw;
 	margin: 1rem 0 0 1rem;
 
 	@media (min-width: 811px) {
 		margin: 1.8rem 0 0 2rem;
+		width: 80vw;
 	}
 `;

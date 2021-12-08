@@ -5,9 +5,9 @@ export const OuterContainer = styled.div`
 	flex-direction: column;
 	align-items: center;
 	justify-content: start;
-	height: 40vh;
+	height: 45vh;
 	width: 100vw;
-	margin-top: 5vh;
+	margin-top: 10vh;
 
 	@media (min-width: 811px) {
 	}

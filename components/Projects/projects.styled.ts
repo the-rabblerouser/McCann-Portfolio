@@ -6,9 +6,8 @@ export const Container = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	height: 80vh;
+	height: 90vh;
 	width: 100vw;
-	margin-top: 5rem;
 
 	@media (min-width: 811px) {
 		height: 100vh;
@@ -31,7 +30,7 @@ export const ProjectsContainer = styled.div`
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 1fr 1fr 1fr;
-	height: 70vh;
+	height: 100%;
 	width: 100vw;
 
 	@media (min-width: 811px) {
@@ -48,6 +47,12 @@ export const Project = styled.div<ProjectStyledProps>`
 	background: url(${({ image }) => image}) no-repeat;
 	background-size: 100% 100%;
 	border: none;
+	opacity: 0.7;
+
+	&:hover {
+		transition: 1s;
+		opacity: 1;
+	}
 
 	@media (min-width: 811px) {
 	}
