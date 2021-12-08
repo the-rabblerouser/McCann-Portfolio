@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useRouter } from 'next/router';
 
-import { useSpring, animated, config } from 'react-spring';
+// import { useSpring, animated, config } from 'react-spring';
 
 import {
 	OuterContainer,
@@ -18,11 +18,11 @@ const index = () => {
 
 	const [isVisible, set] = useState<boolean>(false);
 
-	const props = useSpring({
-		transform: isVisible ? 'translateX(0px)' : 'translateX(50px)',
-		opacity: isVisible ? 1 : 0,
-		config: config.stiff,
-	});
+	// const props = useSpring({
+	// 	transform: isVisible ? 'translateX(0px)' : 'translateX(50px)',
+	// 	opacity: isVisible ? 1 : 0,
+	// 	config: config.stiff,
+	// });
 
 	const href = router.pathname === '/projects' ? '/' : '/projects';
 	const link = router.pathname === '/projects' ? 'Home' : 'Projects';
@@ -31,18 +31,16 @@ const index = () => {
 		<>
 			<OuterContainer>
 				<InnerContainer>
-					{isVisible ? (
-						<animated.div style={props}>
-							<NavLinks>
-								<Projects href={href}>{link}</Projects>
-								<Contact href='mailto:tojmccann@gmail.com'>Contact</Contact>
-							</NavLinks>
-						</animated.div>
-					) : null}
+					<Diamond
+						onMouseEnter={() => set(true)}
+						onMouseLeave={() => set(false)}>
+						<DiamondText style={{}}>J</DiamondText>
+					</Diamond>
+					<NavLinks>
+						<Projects href={href}>{link}</Projects>
+						<Contact href='mailto:tojmccann@gmail.com'>Contact</Contact>
+					</NavLinks>
 				</InnerContainer>
-				<Diamond onClick={() => set(!isVisible)}>
-					<DiamondText style={{}}>J</DiamondText>
-				</Diamond>
 			</OuterContainer>
 		</>
 	);
