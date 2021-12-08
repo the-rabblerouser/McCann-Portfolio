@@ -33,7 +33,7 @@ const Home: NextPage = () => {
 				<Hero />
 				<AboutMe />
 				<ProjectsButtonContainer>
-					<Link href='/projects'>
+					<Link href='/projects' passHref>
 						<ProjectsButton>View Projects</ProjectsButton>
 					</Link>
 				</ProjectsButtonContainer>

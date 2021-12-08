@@ -3,7 +3,7 @@ import type { NextApiRequest, NextApiResponse } from 'next';
 import dbConnect from '../../lib/mongodb';
 import Project from '../../lib/models/ProjectSchema';
 
-export default async (req: NextApiRequest, res: NextApiResponse) => {
+const personalProjects = async (req: NextApiRequest, res: NextApiResponse) => {
 	const { method } = req;
 
 	if (method === 'GET') {
@@ -17,3 +17,5 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
 		}
 	}
 };
+
+export default personalProjects;
