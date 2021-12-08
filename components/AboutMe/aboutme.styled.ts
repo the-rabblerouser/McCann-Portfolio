@@ -5,7 +5,7 @@ export const AboutContainer = styled.div`
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	height: 45vh;
+	height: 35vh;
 	width: 100vw;
 	background: #c96567;
 
