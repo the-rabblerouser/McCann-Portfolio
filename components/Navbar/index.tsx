@@ -1,7 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useRouter } from 'next/router';
-
-// import { useSpring, animated, config } from 'react-spring';
 
 import {
 	OuterContainer,
@@ -15,14 +13,6 @@ import {
 
 const index = () => {
 	const router = useRouter();
-
-	const [isVisible, set] = useState<boolean>(false);
-
-	// const props = useSpring({
-	// 	transform: isVisible ? 'translateX(0px)' : 'translateX(50px)',
-	// 	opacity: isVisible ? 1 : 0,
-	// 	config: config.stiff,
-	// });
 
 	const href = router.pathname === '/projects' ? '/' : '/projects';
 	const link = router.pathname === '/projects' ? 'Home' : 'Projects';
