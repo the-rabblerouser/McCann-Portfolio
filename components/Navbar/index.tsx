@@ -27,6 +27,7 @@ const index = () => {
 		<>
 			<OuterContainer>
 				<InnerContainer
+					onClick={() => setToggle(!toggle)}
 					onMouseEnter={() => setToggle(true)}
 					onMouseLeave={() => setToggle(false)}>
 					<Diamond>

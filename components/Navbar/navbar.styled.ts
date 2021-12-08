@@ -38,15 +38,15 @@ export const Diamond = styled.div`
 	box-shadow: 7px 4px #000;
 	cursor: pointer;
 
-	${InnerContainer}:hover & {
-		transition-duration: 1s;
-		transform: rotate(-90deg);
-		box-shadow: -5px 6px #000;
-	}
-
 	@media (min-width: 811px) {
 		height: 2.5rem;
 		width: 2.5rem;
+
+		${InnerContainer}:hover & {
+			transition-duration: 1s;
+			transform: rotate(-90deg);
+			box-shadow: -5px 6px #000;
+		}
 	}
 `;
 
@@ -57,12 +57,11 @@ export const DiamondText = styled.span`
 	fontsize: 1.5rem;
 	cursor: pointer;
 
-	${InnerContainer}:hover & {
-		fontsize: 1.5rem;
-		transform: rotate(90deg);
-	}
-
 	@media (min-width: 811px) {
+		${InnerContainer}:hover & {
+			fontsize: 1.5rem;
+			transform: rotate(90deg);
+		}
 	}
 `;
 
@@ -72,16 +71,15 @@ export const NavLinks = styled(animated.div)`
 	align-items: center;
 	width: 60%;
 	height: 100%;
-	transition: transform 0.7s, opacity 0.1s;
-
-	transform: translateX(30px);
-
-	${InnerContainer}:hover & {
-		transform: translateX(0px);
-	}
 
 	@media (min-width: 811px) {
 		justify-content: end;
+		transition: transform 0.7s, opacity 0.1s;
+		transform: translateX(30px);
+
+		${InnerContainer}:hover & {
+			transform: translateX(0px);
+		}
 	}
 `;
 
@@ -111,6 +109,11 @@ export const Contact = styled.a`
 	&:hover {
 		transition: 0.3s;
 		color: ${({ theme }) => theme.primary};
+	}
+
+	@media (min-width: 810px) {
+		margin-left: 4rem;
+		margin-right: -20rem;
 	}
 
 	@media (min-width: 811px) {

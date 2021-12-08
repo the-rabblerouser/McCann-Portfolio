@@ -9,7 +9,7 @@ export const OuterContainer = styled.div`
 	width: 100vw;
 	margin-top: 10vh;
 
-	@media (min-width: 811px) {
+	@media (min-width: 810px) {
 	}
 `;
 
@@ -18,7 +18,7 @@ export const Img = styled.img`
 	width: 7rem;
 	margin: 5px;
 
-	@media (min-width: 811px) {
+	@media (min-width: 810px) {
 		margin: 1rem;
 	}
 `;
@@ -31,7 +31,7 @@ export const Name = styled.p`
 	text-align: center;
 	width: 100%;
 
-	@media (min-width: 811px) {
+	@media (min-width: 810px) {
 	}
 `;
 
@@ -42,6 +42,6 @@ export const About = styled.p`
 	text-align: center;
 	width: 100%;
 
-	@media (min-width: 811px) {
+	@media (min-width: 810px) {
 	}
 `;

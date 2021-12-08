@@ -9,7 +9,7 @@ export const AboutContainer = styled.div`
 	width: 100vw;
 	background: ${({ theme }) => theme.primary};
 
-	@media (min-width: 811px) {
+	@media (min-width: 810px) {
 	}
 `;
 
@@ -20,7 +20,7 @@ export const Paragraph = styled.p`
 	width: 90%;
 	margin: 0.5rem 0 0 0;
 
-	@media (min-width: 811px) {
+	@media (min-width: 810px) {
 		text-align: center;
 		margin: 2rem 0 0 0;
 	}
@@ -35,7 +35,7 @@ export const LinksContainer = styled.div`
 	margin-top: 3.5rem;
 	width: 22rem;
 
-	@media (min-width: 811px) {
+	@media (min-width: 810px) {
 		margin-top: 3rem;
 		width: 50%;
 	}
