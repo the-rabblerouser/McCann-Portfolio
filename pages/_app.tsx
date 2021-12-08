@@ -1,5 +1,6 @@
 import type { AppProps } from 'next/app';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
+import Head from 'next/head';
 
 const GlobalStyle = createGlobalStyle`
 html,
@@ -30,6 +31,9 @@ const theme = {
 function MyApp({ Component, pageProps }: AppProps) {
 	return (
 		<>
+			<Head>
+				<title>joemccann.tech</title>
+			</Head>
 			<ThemeProvider theme={theme}>
 				<GlobalStyle />
 				<Component {...pageProps} />
