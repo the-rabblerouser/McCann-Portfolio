@@ -15,7 +15,7 @@ export const ModalMain = styled.div`
 	flex-direction: column;
 	justify-content: start;
 	align-items: start;
-	background-color: #314455;
+	background-color: ${({ theme }) => theme.teriary};
 	height: 45%;
 	width: 95%;
 
@@ -35,7 +35,7 @@ export const Image = styled.img`
 `;
 
 export const Title = styled.p`
-	color: #fff;
+	color: ${({ theme }) => theme.white};
 	font-size: 1.5rem;
 	text-align: left;
 	width: 100%;
@@ -47,7 +47,7 @@ export const Title = styled.p`
 `;
 
 export const Tools = styled.p`
-	color: #fff;
+	color: ${({ theme }) => theme.white};
 	font-size: 0.8rem;
 	text-align: left;
 	width: 100%;
@@ -61,14 +61,14 @@ export const Tools = styled.p`
 export const Hr = styled.hr`
 	align-self: center;
 	width: 97%;
-	color: #fff;
+	color: ${({ theme }) => theme.white};
 
 	@media (min-width: 811px) {
 	}
 `;
 
 export const ModalDescription = styled.p`
-	color: #fff;
+	color: ${({ theme }) => theme.white};
 	font-size: 0.8rem;
 	text-align: left;
 	width: 90%;
@@ -83,7 +83,7 @@ export const ModalDescription = styled.p`
 export const Link = styled.a`
 	&:hover {
 		transition: 0.3s;
-		color: #c96567;
+		color: ${({ theme }) => theme.primary};
 	}
 
 	@media (min-width: 811px) {

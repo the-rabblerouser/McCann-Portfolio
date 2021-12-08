@@ -21,9 +21,9 @@ a {
 `;
 
 const theme = {
-	red: '#c96567',
-	blue: '#314455',
-	lightBlue: '#97aabd',
+	primary: '#c96567',
+	secondary: '#97aabd',
+	teriary: '#314455',
 	white: '#fff',
 };
 

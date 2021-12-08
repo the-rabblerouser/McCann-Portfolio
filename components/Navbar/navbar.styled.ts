@@ -10,6 +10,7 @@ export const OuterContainer = styled.div`
 	width: 100vw;
 
 	@media (min-width: 811px) {
+		width: 90vw;
 	}
 `;
 
@@ -33,7 +34,7 @@ export const Diamond = styled.div`
 	margin: 0 0 0 0;
 	transition-duration: 1s;
 	transform: rotate(45deg);
-	background: #97aabd;
+	background: ${({ theme }) => theme.secondary};
 	box-shadow: 7px 4px #000;
 	cursor: pointer;
 
@@ -93,7 +94,7 @@ export const Projects = styled.a`
 
 	&:hover {
 		transition: 0.3s;
-		color: ${({ theme }) => theme.red};
+		color: ${({ theme }) => theme.primary};
 	}
 
 	@media (min-width: 811px) {
@@ -109,7 +110,7 @@ export const Contact = styled.a`
 
 	&:hover {
 		transition: 0.3s;
-		color: ${({ theme }) => theme.red};
+		color: ${({ theme }) => theme.primary};
 	}
 
 	@media (min-width: 811px) {

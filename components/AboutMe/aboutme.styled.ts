@@ -7,7 +7,7 @@ export const AboutContainer = styled.div`
 	justify-content: center;
 	height: 35vh;
 	width: 100vw;
-	background: ${({ theme }) => theme.red};
+	background: ${({ theme }) => theme.primary};
 
 	@media (min-width: 811px) {
 	}
@@ -36,7 +36,7 @@ export const LinksContainer = styled.div`
 	width: 22rem;
 
 	@media (min-width: 811px) {
-		margin-top: 7rem;
+		margin-top: 3rem;
 		width: 50%;
 	}
 `;
@@ -47,7 +47,7 @@ export const MediaLink = styled.a`
 
 	&:hover {
 		transition: 0.3s;
-		color: ${({ theme }) => theme.lightBlue};
+		color: ${({ theme }) => theme.secondary};
 	}
 
 	@media (min-width: 811px) {

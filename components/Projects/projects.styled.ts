@@ -81,7 +81,7 @@ export const ProjectsButton = styled.a`
 	transition: 0.6s;
 	color: ${({ theme }) => theme.white};
 	font-size: 0.8rem;
-	background-color: ${({ theme }) => theme.lightBlue};
+	background-color: ${({ theme }) => theme.secondary};
 	border: none;
 	height: 3rem;
 	width: 8rem;
@@ -90,8 +90,7 @@ export const ProjectsButton = styled.a`
 
 	&:hover {
 		transition: 0.6s;
-		background-color: ${({ theme }) => theme.red};
-		color: ${({ theme }) => theme.white};
+		background-color: ${({ theme }) => theme.primary};
 	}
 
 	@media (min-width: 811px) {

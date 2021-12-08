@@ -30,7 +30,7 @@ export const Email = styled.a`
 
 	&:hover {
 		transition: 0.3s;
-		color: ${({ theme }) => theme.red};
+		color: ${({ theme }) => theme.primary};
 	}
 
 	@media (min-width: 811px) {
@@ -58,7 +58,7 @@ export const MediaLink = styled.a`
 
 	&:hover {
 		transition: 0.3s;
-		color: ${({ theme }) => theme.red};
+		color: ${({ theme }) => theme.primary};
 	}
 
 	@media (min-width: 811px) {
