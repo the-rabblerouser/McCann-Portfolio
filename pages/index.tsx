@@ -4,7 +4,7 @@ import Link from 'next/link';
 import styled from 'styled-components';
 import Particles from 'react-tsparticles';
 
-// import Navbar from '../components/Navbar';
+import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import AboutMe from '../components/AboutMe';
 import Connect from '../components/Connect';
@@ -29,7 +29,7 @@ const Home: NextPage = () => {
 		<>
 			<Particles id='tsparticles' options={particleOptions} />
 			<AppContainer>
-				{/* <Navbar /> */}
+				<Navbar />
 				<Hero />
 				<AboutMe />
 				<ProjectsButtonContainer>
