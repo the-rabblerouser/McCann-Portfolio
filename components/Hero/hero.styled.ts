@@ -24,7 +24,7 @@ export const Img = styled.img`
 `;
 
 export const Name = styled.p`
-	color: #fff;
+	color: ${({ theme }) => theme.white};
 	font-size: 2rem;
 	font-weight: 600;
 	margin: 1rem 0 0 0;
@@ -36,7 +36,7 @@ export const Name = styled.p`
 `;
 
 export const About = styled.p`
-	color: #fff;
+	color: ${({ theme }) => theme.white};
 	font-size: 0.9rem;
 	margin: 1rem 0 0 0;
 	text-align: center;

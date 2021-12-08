@@ -15,7 +15,7 @@ export const Container = styled.div`
 `;
 
 export const Title = styled.p`
-	color: #fff;
+	color: ${({ theme }) => theme.white};
 	font-size: 0.8rem;
 	text-align: center;
 	margin: 2rem 0 1rem 0;
@@ -78,9 +78,10 @@ export const ProjectsButton = styled.a`
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	color: #fff;
+	transition: 0.6s;
+	color: ${({ theme }) => theme.white};
 	font-size: 0.8rem;
-	background-color: #97aabd;
+	background-color: ${({ theme }) => theme.lightBlue};
 	border: none;
 	height: 3rem;
 	width: 8rem;
@@ -89,8 +90,8 @@ export const ProjectsButton = styled.a`
 
 	&:hover {
 		transition: 0.6s;
-		background-color: #fff;
-		color: #c96567;
+		background-color: ${({ theme }) => theme.red};
+		color: ${({ theme }) => theme.white};
 	}
 
 	@media (min-width: 811px) {

@@ -52,7 +52,7 @@ export const Diamond = styled.div`
 export const DiamondText = styled.span`
 	transition-duration: 1s;
 	transform: rotate(-45deg);
-	color: #fff;
+	color: ${({ theme }) => theme.white};
 	fontsize: 1.5rem;
 	cursor: pointer;
 
@@ -87,13 +87,13 @@ export const NavLinks = styled(animated.div)`
 export const Projects = styled.a`
 	background: none;
 	border: none;
-	color: #fff;
+	color: ${({ theme }) => theme.white};
 	font-size: 1rem;
 	margin-left: 8rem;
 
 	&:hover {
 		transition: 0.3s;
-		color: #c96567;
+		color: ${({ theme }) => theme.red};
 	}
 
 	@media (min-width: 811px) {
@@ -102,14 +102,14 @@ export const Projects = styled.a`
 `;
 
 export const Contact = styled.a`
-	color: #fff;
+	color: ${({ theme }) => theme.white};
 	font-size: 1rem;
 	margin-left: 3rem;
 	margin-right: 4rem;
 
 	&:hover {
 		transition: 0.3s;
-		color: #c96567;
+		color: ${({ theme }) => theme.red};
 	}
 
 	@media (min-width: 811px) {

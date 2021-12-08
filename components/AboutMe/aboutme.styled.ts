@@ -7,14 +7,14 @@ export const AboutContainer = styled.div`
 	justify-content: center;
 	height: 35vh;
 	width: 100vw;
-	background: #c96567;
+	background: ${({ theme }) => theme.red};
 
 	@media (min-width: 811px) {
 	}
 `;
 
 export const Paragraph = styled.p`
-	color: #fff;
+	color: ${({ theme }) => theme.white};
 	font-size: 1rem;
 	text-align: justify;
 	width: 90%;
@@ -42,12 +42,12 @@ export const LinksContainer = styled.div`
 `;
 
 export const MediaLink = styled.a`
-	color: #fff;
+	color: ${({ theme }) => theme.white};
 	font-size: 1rem;
 
 	&:hover {
 		transition: 0.3s;
-		color: #97aabd;
+		color: ${({ theme }) => theme.lightBlue};
 	}
 
 	@media (min-width: 811px) {
