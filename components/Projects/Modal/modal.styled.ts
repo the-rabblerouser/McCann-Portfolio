@@ -6,9 +6,6 @@ export const ModalContainer = styled.div`
 	align-items: center;
 	height: 100vh;
 	width: 100vw;
-	position: fixed;
-	overflow-x: hidden;
-	overflow-y: hidden !important;
 `;
 
 export const ModalMain = styled.div`
@@ -18,7 +15,7 @@ export const ModalMain = styled.div`
 	flex-direction: column;
 	justify-content: bottom;
 	align-items: center;
-	background-color: #9e5a63;
+	background-color: #314455;
 
 	@media (min-width: 811px) {
 		height: 35rem;
@@ -79,5 +76,16 @@ export const ModalDescription = styled.p`
 	@media (min-width: 811px) {
 		margin: 1.8rem 0 0 2rem;
 		width: 80vw;
+	}
+`;
+
+export const Link = styled.a`
+	&:hover {
+		transition: 0.3s;
+		color: #c96567;
+	}
+
+	@media (min-width: 811px) {
+		margin: 0.8rem 0 0 0;
 	}
 `;

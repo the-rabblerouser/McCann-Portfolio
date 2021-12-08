@@ -48,6 +48,7 @@ export const Project = styled.div<ProjectStyledProps>`
 	background-size: 100% 100%;
 	border: none;
 	opacity: 0.7;
+	cursor: pointer;
 
 	&:hover {
 		transition: 1s;
@@ -85,6 +86,12 @@ export const ProjectsButton = styled.a`
 	width: 8rem;
 	box-shadow: 6px 5px #000;
 	cursor: pointer;
+
+	&:hover {
+		transition: 0.6s;
+		background-color: #fff;
+		color: #c96567;
+	}
 
 	@media (min-width: 811px) {
 		font-size: 1rem;

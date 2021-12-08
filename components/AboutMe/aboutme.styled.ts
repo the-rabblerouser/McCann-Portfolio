@@ -45,6 +45,11 @@ export const MediaLink = styled.a`
 	color: #fff;
 	font-size: 1rem;
 
+	&:hover {
+		transition: 0.3s;
+		color: #97aabd;
+	}
+
 	@media (min-width: 811px) {
 	}
 `;

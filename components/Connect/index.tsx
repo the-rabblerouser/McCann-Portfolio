@@ -15,7 +15,7 @@ const index = ({ background }: ConnectStyledProps) => {
 	return (
 		<>
 			<Container background={background}>
-				<Connect>Feel free to reach out if you're looking to connect</Connect>
+				<Connect>Lets Build Something Together</Connect>
 				<Email href='mailto:tojmccann@gmail.com'>tojmccann@gmail.com</Email>
 				<LinksContainer>
 					<Brand>Joe McCann {new Date().getFullYear()}</Brand>

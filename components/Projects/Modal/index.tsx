@@ -10,6 +10,7 @@ import {
 	Tools,
 	ModalDescription,
 	Hr,
+	Link,
 } from './modal.styled';
 
 import { ModalProps } from './ModalPropTypes';
@@ -30,10 +31,10 @@ const index = ({
 					<ModalDescription>{description}</ModalDescription>
 					<Hr />
 					<ModalDescription>
-						Code: <a href={repository}>{repository}</a>
+						Code: <Link href={repository}>{repository}</Link>
 					</ModalDescription>
 					<ModalDescription>
-						Website: <a href={site}>{site} </a>
+						Website: <Link href={site}>{site} </Link>
 					</ModalDescription>
 				</ModalMain>
 			</ModalContainer>

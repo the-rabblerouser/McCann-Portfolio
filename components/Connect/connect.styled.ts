@@ -15,7 +15,7 @@ export const Container = styled.div<ConnectStyledProps>`
 
 export const Connect = styled.p`
 	color: #fff;
-	font-size: 0.8rem;
+	font-size: 1rem;
 
 	@media (min-width: 811px) {
 		font-size: 1.2rem;
@@ -25,11 +25,15 @@ export const Connect = styled.p`
 export const Email = styled.a`
 	color: #fff;
 	font-size: 1rem;
-	margin-top: 1rem;
+	margin-top: 0.4rem;
 	text-decoration: underline;
 
+	&:hover {
+		transition: 0.3s;
+		color: #c96567;
+	}
+
 	@media (min-width: 811px) {
-		font-size: 1rem;
 	}
 `;
 
@@ -51,6 +55,11 @@ export const LinksContainer = styled.div`
 export const MediaLink = styled.a`
 	color: #fff;
 	font-size: 0.8rem;
+
+	&:hover {
+		transition: 0.3s;
+		color: #c96567;
+	}
 
 	@media (min-width: 811px) {
 		font-size: 1rem;

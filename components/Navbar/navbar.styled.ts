@@ -91,6 +91,11 @@ export const Projects = styled.a`
 	font-size: 1rem;
 	margin-left: 8rem;
 
+	&:hover {
+		transition: 0.3s;
+		color: #c96567;
+	}
+
 	@media (min-width: 811px) {
 		margin-left: 10rem;
 	}
@@ -101,6 +106,11 @@ export const Contact = styled.a`
 	font-size: 1rem;
 	margin-left: 3rem;
 	margin-right: 4rem;
+
+	&:hover {
+		transition: 0.3s;
+		color: #c96567;
+	}
 
 	@media (min-width: 811px) {
 		margin-left: 4rem;
