@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import { useRouter } from 'next/router';
 
-import { useSpring } from 'react-spring';
-
 import {
 	OuterContainer,
 	InnerContainer,
@@ -18,8 +16,6 @@ const Navbar = () => {
 
 	const [toggle, setToggle] = useState<boolean>(false);
 
-	const styles = useSpring({ opacity: toggle ? 1 : 0 });
-
 	const href = router.pathname === '/projects' ? '/' : '/projects';
 	const link = router.pathname === '/projects' ? 'Home' : 'Projects';
 
@@ -30,11 +26,11 @@ const Navbar = () => {
 					onClick={() => setToggle(!toggle)}
 					onMouseEnter={() => setToggle(true)}
 					onMouseLeave={() => setToggle(false)}>
-					<Diamond>
-						<DiamondText>J</DiamondText>
+					<Diamond toggle={toggle}>
+						<DiamondText toggle={toggle}>J</DiamondText>
 					</Diamond>
 
-					<NavLinks style={styles}>
+					<NavLinks toggle={toggle}>
 						<Projects href={href}>{link}</Projects>
 						<Contact href='mailto:tojmccann@gmail.com'>Contact</Contact>
 					</NavLinks>

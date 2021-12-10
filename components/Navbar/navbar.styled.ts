@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
-import { animated } from 'react-spring';
+interface NavProps {
+	toggle: boolean;
+}
 
 export const OuterContainer = styled.div`
 	display: flex;
@@ -25,7 +27,7 @@ export const InnerContainer = styled.div`
 	}
 `;
 
-export const Diamond = styled.div`
+export const Diamond = styled.div<NavProps>`
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -33,53 +35,41 @@ export const Diamond = styled.div`
 	width: 30px;
 	margin: 0 0 0 0;
 	transition-duration: 1s;
-	transform: rotate(45deg);
+	transform: ${({ toggle }) => (toggle ? 'rotate(-90deg)' : 'rotate(45deg)')};
 	background: ${({ theme }) => theme.secondary};
-	box-shadow: 7px 4px #000;
+	box-shadow: ${({ toggle }) => (toggle ? '-5px 6px #000' : '7px 4px #000')};
 	cursor: pointer;
 
 	@media (min-width: 811px) {
 		height: 2.5rem;
 		width: 2.5rem;
-
-		${InnerContainer}:hover & {
-			transition-duration: 1s;
-			transform: rotate(-90deg);
-			box-shadow: -5px 6px #000;
-		}
 	}
 `;
 
-export const DiamondText = styled.span`
-	transition-duration: 1s;
-	transform: rotate(-45deg);
+export const DiamondText = styled.span<NavProps>`
 	color: ${({ theme }) => theme.white};
 	fontsize: 1.5rem;
+	transition-duration: 1s;
+	transform: ${({ toggle }) => (toggle ? 'rotate(90deg)' : 'rotate(-45deg)')};
 	cursor: pointer;
 
 	@media (min-width: 811px) {
-		${InnerContainer}:hover & {
-			fontsize: 1.5rem;
-			transform: rotate(90deg);
-		}
 	}
 `;
 
-export const NavLinks = styled(animated.div)`
+export const NavLinks = styled.div<NavProps>`
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	width: 60%;
 	height: 100%;
+	transition: transform 0.7s, opacity 0.1s;
+	transform: ${({ toggle }) =>
+		toggle ? 'translateX(0px)' : 'translateX(40px)'};
+	opacity: ${({ toggle }) => (toggle ? 1 : 0)};
 
 	@media (min-width: 811px) {
 		justify-content: -webkit-end;
-		transition: transform 0.7s, opacity 0.1s;
-		transform: translateX(30px);
-
-		${InnerContainer}:hover & {
-			transform: translateX(0px);
-		}
 	}
 `;
 
