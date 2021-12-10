@@ -27,7 +27,6 @@ const Projects = () => {
 			width: '100vw',
 			zindex: '1',
 			position: 'fixed',
-			overflowY: 'hidden',
 			top: '0',
 			background: 'rgba(0,0,0,0.4)',
 		},
@@ -43,34 +42,42 @@ const Projects = () => {
 	if (!data) return <></>;
 
 	return (
-		<Container>
-			<Title>Check out some of my personal projects</Title>
-			<ProjectsContainer>
-				{data.map((item) => {
-					return (
-						<div key={item.title}>
-							<Project
-								image={item.image}
-								onClick={() => {
-									setprojectData(item);
-									setshowModal(true);
-								}}
-							/>
-						</div>
-					);
-				})}
-				{transitions(
-					(styles, item) =>
-						item && (
-							<Modal
-								styles={styles}
-								data={projectData}
-								onClose={() => setshowModal(false)}
-							/>
-						)
-				)}
-			</ProjectsContainer>
-		</Container>
+		<>
+			<Container>
+				<Title>Check out some of my personal projects</Title>
+				<ProjectsContainer>
+					{data.map((item) => {
+						return (
+							<div key={item.title}>
+								<Project
+									image={item.image}
+									onClick={() => {
+										setprojectData(item);
+										setshowModal(true);
+									}}
+								/>
+							</div>
+						);
+					})}
+					{transitions(
+						(styles, item) =>
+							item && (
+								<Modal
+									styles={styles}
+									data={projectData}
+									onClose={() => setshowModal(false)}
+								/>
+							)
+					)}
+				</ProjectsContainer>
+			</Container>
+
+			<style global jsx>{`
+				body {
+					position: ${showModal ? 'fixed' : ''};
+				}
+			`}</style>
+		</>
 	);
 };
 
