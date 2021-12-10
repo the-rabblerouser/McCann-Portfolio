@@ -12,7 +12,7 @@ const About = () => {
 		<>
 			<AboutContainer>
 				<Paragraph>
-					I am a fullstack Web Devloper with a focus frontend development.
+					I am a fullstack Web Devloper with a focus on frontend development.
 				</Paragraph>
 				<Paragraph>
 					My preferred tools are Typescript, React.js, Next.js, Node.js, and
