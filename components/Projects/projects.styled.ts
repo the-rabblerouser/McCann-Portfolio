@@ -1,6 +1,14 @@
 import styled from 'styled-components';
 
 import { ProjectStyledProps } from './types/projectStyledProps';
+import { BodyProps } from './types/BodyProps';
+
+export const Body = styled.body<BodyProps>`
+	position: ${({ showModal }) => (showModal ? 'fixed' : '')};
+
+	@media (min-width: 811px) {
+	}
+`;
 
 export const Container = styled.div`
 	display: flex;

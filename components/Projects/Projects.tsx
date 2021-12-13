@@ -4,6 +4,7 @@ import useSWR from 'swr';
 import { useTransition } from 'react-spring';
 
 import {
+	Body,
 	Container,
 	Title,
 	ProjectsContainer,
@@ -42,7 +43,7 @@ const Projects = () => {
 	if (!data) return <></>;
 
 	return (
-		<>
+		<Body showModal={showModal}>
 			<Container>
 				<Title>Check out some of my personal projects</Title>
 				<ProjectsContainer>
@@ -71,13 +72,7 @@ const Projects = () => {
 					)}
 				</ProjectsContainer>
 			</Container>
-
-			<style global jsx>{`
-				body {
-					position: ${showModal ? 'fixed' : ''};
-				}
-			`}</style>
-		</>
+		</Body>
 	);
 };
 
