@@ -13,44 +13,50 @@ export const AboutContainer = styled.div`
 	}
 `;
 
-interface AboutTypes {
-	margin: string;
-	color: string;
-}
-
-export const AboutMe = styled.p<AboutTypes>`
+export const AboutMe = styled.p`
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	width: 100%;
 	height: 64.47px;
-	margin: ${({ margin }) => margin};
-	background: ${({ color }) => color};
+	margin: 7px 0 0 0;
+	background: ${({ theme }) => theme.darkGrey};
 	color: ${({ theme }) => theme.white};
 	font-size: 18px;
 	line-height: 21px;
 	text-align: center;
 	letter-spacing: 1.35px;
 
-	@media (min-width: 810px) {
+	@media (min-width: 765px) {
+		width: 50vw;
+		margin: 1rem 0 0 2rem;
 		text-align: center;
-		margin: 2rem 0 0 0;
 	}
 `;
 
-interface ToolTypes {
-	margin: string;
-}
-
-export const ToolsContainer = styled.div<ToolTypes>`
+export const ToolsContainerOne = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: start;
 	height: 50px;
 	width: 100vw;
-	margin: ${({ margin }) => margin};
+	margin: 0 0 0 1rem;
 
 	@media (min-width: 810px) {
+		margin: 0 0 0 4rem;
+	}
+`;
+
+export const ToolsContainerTwo = styled.div`
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	height: 50px;
+	width: 100vw;
+	margin: 0 0 0 3rem;
+
+	@media (min-width: 810px) {
+		margin: 0 0 0 8rem;
 	}
 `;
 
@@ -71,6 +77,27 @@ export const Tool = styled.p`
 	}
 `;
 
+export const CheckOut = styled.p`
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 64.47px;
+	margin: 0;
+	background: ${({ theme }) => theme.lightGrey};
+	color: ${({ theme }) => theme.white};
+	font-size: 18px;
+	line-height: 21px;
+	text-align: center;
+	letter-spacing: 1.35px;
+
+	@media (min-width: 765px) {
+		width: 50%;
+		margin: 0 0 0 4rem;
+		text-align: center;
+	}
+`;
+
 export const LinksContainer = styled.div`
 	align-self: center;
 	display: flex;
@@ -82,7 +109,9 @@ export const LinksContainer = styled.div`
 	background: ${({ theme }) => theme.black};
 	text-align: center;
 
-	@media (min-width: 810px) {
+	@media (min-width: 765px) {
+		align-self: start;
+		margin: 0 0 0 10rem;
 	}
 `;
 
@@ -95,7 +124,7 @@ export const MediaLink = styled.a`
 		color: ${({ theme }) => theme.lightGreen};
 	}
 
-	@media (min-width: 811px) {
+	@media (min-width: 765px) {
 	}
 `;
 
@@ -115,7 +144,10 @@ export const WebDeveloper = styled.p`
 	text-align: center;
 	letter-spacing: 1.35px;
 
-	@media (min-width: 810px) {
+	@media (min-width: 765px) {
+		align-self: end;
+		margin: 3rem 0 0 0;
+		text-align: left;
 	}
 `;
 
@@ -144,6 +176,7 @@ export const ProjectsButton = styled.a`
 		background-color: ${({ theme }) => theme.darkGreen};
 	}
 
-	@media (min-width: 811px) {
+	@media (min-width: 765px) {
+		margin: 8rem 0 0 0;
 	}
 `;

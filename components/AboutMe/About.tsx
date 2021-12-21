@@ -4,8 +4,10 @@ import Link from 'next/link';
 import {
 	AboutContainer,
 	AboutMe,
-	ToolsContainer,
+	ToolsContainerOne,
+	ToolsContainerTwo,
 	Tool,
+	CheckOut,
 	LinksContainer,
 	MediaLink,
 	WebDeveloper,
@@ -16,22 +18,18 @@ const About = () => {
 	return (
 		<>
 			<AboutContainer>
-				<AboutMe color='#474B4f' margin='7px 0 0 0'>
-					My preffered tools are
-				</AboutMe>
-				<ToolsContainer margin='0 0 0 1rem'>
+				<AboutMe>My preffered tools are</AboutMe>
+				<ToolsContainerOne>
 					<Tool color='#61892f'>Typescript</Tool>
 					<Tool color='#000000'>React.js</Tool>
 					<Tool color='#61892f'>Next.js</Tool>
-				</ToolsContainer>
-				<ToolsContainer margin='0 0 0 3rem'>
+				</ToolsContainerOne>
+				<ToolsContainerTwo>
 					<Tool color='#86c232'>Node.js</Tool>
 					<Tool color='#474B4F'>Express.js</Tool>
 					<Tool color='#000000'>MongoDB</Tool>
-				</ToolsContainer>
-				<AboutMe color='#6b6e70' margin='0'>
-					Check me out on
-				</AboutMe>
+				</ToolsContainerTwo>
+				<CheckOut>Check me out on</CheckOut>
 				<LinksContainer>
 					<MediaLink href='https://github.com/the-rabblerouser'>
 						Github

@@ -3,13 +3,13 @@ import styled from 'styled-components';
 export const OuterContainer = styled.div`
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	align-items: start;
 	justify-content: start;
 	height: 89vh;
 	width: 100vw;
-	margin-top: 79.8px;
+	margin: 79.8px 0 0 0;
 
-	@media (min-width: 810px) {
+	@media (min-width: 765px) {
 	}
 `;
 
@@ -28,7 +28,10 @@ export const Name = styled.p`
 	line-height: 42px;
 	text-align: center;
 
-	@media (min-width: 810px) {
+	@media (min-width: 765px) {
+		width: 449px;
+		height: 110px;
+		margin: 0 0 0 44px;
 	}
 `;
 
@@ -45,7 +48,11 @@ export const WebDev = styled.p`
 	text-align: center;
 	background-color: ${({ theme }) => theme.lightGreen};
 
-	@media (min-width: 810px) {
+	@media (min-width: 765px) {
+		width: 277px;
+		height: 65.52px;
+		margin: 0 0 0 77px;
+		font-size: 14px;
 	}
 `;
 
@@ -62,7 +69,11 @@ export const NYC = styled.p`
 	text-align: center;
 	background-color: ${({ theme }) => theme.darkGrey};
 
-	@media (min-width: 810px) {
+	@media (min-width: 765px) {
+		width: 277px;
+		height: 65.52px;
+		margin: 0 0 0 144px;
+		font-size: 14px;
 	}
 `;
 
@@ -79,7 +90,10 @@ export const IconContainer = styled.div`
 	border-top: 1px solid ${({ theme }) => theme.white};
 	color: ${({ theme }) => theme.white};
 
-	@media (min-width: 810px) {
+	@media (min-width: 765px) {
+		width: 449px;
+		margin: 43.4px 0 0 44px;
+		padding-top: 28px;
 	}
 `;
 
@@ -88,7 +102,10 @@ export const Img = styled.img`
 	height: 190.03px;
 	margin-top: 43px;
 
-	@media (min-width: 810px) {
+	@media (min-width: 765px) {
+		align-self: center;
+		width: 725px;
+		height: 390px;
 	}
 `;
 
@@ -101,6 +118,7 @@ export const ArrowContainer = styled.div`
 	margin-top: 61px;
 	color: ${({ theme }) => theme.white};
 
-	@media (min-width: 810px) {
+	@media (min-width: 765px) {
+		margin-top: 31px;
 	}
 `;

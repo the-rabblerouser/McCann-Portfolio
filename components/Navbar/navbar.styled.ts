@@ -5,21 +5,22 @@ export const OuterContainer = styled.div`
 	width: 100vw;
 	margin-top: 2rem;
 
-	@media (min-width: 811px) {
-		width: 90vw;
+	@media (min-width: 765px) {
 	}
 `;
 
 export const NavLinks = styled.div`
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: center;
 	align-items: center;
+	gap: 3rem;
 	width: 100%;
 	height: 100%;
 
-	@media (min-width: 811px) {
-		justify-content: -webkit-end;
+	@media (min-width: 765px) {
+		justify-content: end;
+		gap: 4rem;
 	}
 `;
 
@@ -30,8 +31,9 @@ export const Img = styled.img`
 	border: 1px solid white;
 	border-radius: 100%;
 
-	@media (min-width: 810px) {
-		margin: 1rem;
+	@media (min-width: 765px) {
+		order: 3;
+		margin: 0 3rem 0 0;
 	}
 `;
 
@@ -47,7 +49,7 @@ export const Projects = styled.a`
 		color: ${({ theme }) => theme.lightGreen};
 	}
 
-	@media (min-width: 811px) {
+	@media (min-width: 765px) {
 	}
 `;
 
@@ -59,5 +61,9 @@ export const Contact = styled.a`
 	&:hover {
 		transition: 0.3s;
 		color: ${({ theme }) => theme.primary};
+	}
+
+	@media (min-width: 765px) {
+		order: 2;
 	}
 `;

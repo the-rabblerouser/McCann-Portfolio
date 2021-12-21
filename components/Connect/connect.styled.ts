@@ -9,7 +9,7 @@ export const Container = styled.div<ConnectStyledProps>`
 	justify-content: start;
 	height: 20vh;
 	width: 100vw;
-	@media (min-width: 810px) {
+	@media (min-width: 765px) {
 	}
 `;
 
@@ -25,7 +25,11 @@ export const ConnectParagraph = styled.p`
 	margin: 25px 0 0 0;
 	color: ${({ theme }) => theme.white};
 
-	@media (min-width: 810px) {
+	@media (min-width: 765px) {
+		width: 540px;
+		height: 66px;
+		margin: 0 0 0 0;
+		font-size: 24px;
 	}
 `;
 
@@ -46,7 +50,8 @@ export const Email = styled.a`
 		transition: text-decoration 0.3s, color 0.3s;
 	}
 
-	@media (min-width: 810px) {
+	@media (min-width: 765px) {
+		font-size: 24px;
 	}
 `;
 
@@ -60,9 +65,10 @@ export const LinksContainer = styled.div`
 	margin: 15% 0 0 0;
 	text-align: center;
 
-	@media (min-width: 810px) {
-		margin-top: 5rem;
-		width: 20rem;
+	@media (min-width: 765px) {
+		margin-top: 4rem;
+		width: 50%;
+		font-size: 18px;
 	}
 `;
 
@@ -82,7 +88,8 @@ export const MediaLink = styled.a`
 		color: ${({ theme }) => theme.lightGreen};
 	}
 
-	@media (min-width: 810px) {
+	@media (min-width: 765px) {
+		font-size: 18px;
 	}
 `;
 
@@ -98,6 +105,7 @@ export const Brand = styled.p`
 	text-transform: uppercase;
 	color: ${({ theme }) => theme.white};
 
-	@media (min-width: 810px) {
+	@media (min-width: 765px) {
+		font-size: 18px;
 	}
 `;
