@@ -8,6 +8,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Nunito Sans', sans-serif;
+  background: #222629;
 }
 
 a {
@@ -26,6 +27,10 @@ const theme = {
 	secondary: '#97aabd',
 	teriary: '#314455',
 	white: '#fff',
+	lightGreen: '#86c232',
+	darkGreen: '#61892f',
+	lightGrey: '#6b6e70',
+	darkGrey: '#474B4F',
 };
 
 function MyApp({ Component, pageProps }: AppProps) {

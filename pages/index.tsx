@@ -27,7 +27,7 @@ const AppContainer = styled.div`
 const Home: NextPage = () => {
 	return (
 		<>
-			<Particles id='tsparticles' options={particleOptions} />
+			{/* <Particles id='tsparticles' options={particleOptions} /> */}
 			<AppContainer>
 				<Navbar />
 				<Hero />

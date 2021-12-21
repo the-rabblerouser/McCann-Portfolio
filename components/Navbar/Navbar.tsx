@@ -3,10 +3,8 @@ import { useRouter } from 'next/router';
 
 import {
 	OuterContainer,
-	InnerContainer,
 	NavLinks,
-	Diamond,
-	DiamondText,
+	Img,
 	Projects,
 	Contact,
 } from './navbar.styled';
@@ -22,19 +20,11 @@ const Navbar = () => {
 	return (
 		<>
 			<OuterContainer>
-				<InnerContainer
-					onClick={() => setToggle(!toggle)}
-					onMouseEnter={() => setToggle(true)}
-					onMouseLeave={() => setToggle(false)}>
-					<Diamond toggle={toggle}>
-						<DiamondText toggle={toggle}>J</DiamondText>
-					</Diamond>
-
-					<NavLinks toggle={toggle}>
-						<Projects href={href}>{link}</Projects>
-						<Contact href='mailto:tojmccann@gmail.com'>Contact</Contact>
-					</NavLinks>
-				</InnerContainer>
+				<NavLinks>
+					<Img src='images/IMG_1463.png' />
+					<Projects href={href}>{link}</Projects>
+					<Contact href='mailto:tojmccann@gmail.com'>Contact</Contact>
+				</NavLinks>
 			</OuterContainer>
 		</>
 	);

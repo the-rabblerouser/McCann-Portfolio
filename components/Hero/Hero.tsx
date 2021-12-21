@@ -1,15 +1,31 @@
 import React from 'react';
 
-import { OuterContainer, Img, Name, About } from './hero.styled';
+import {
+	OuterContainer,
+	Name,
+	WebDev,
+	NYC,
+	IconContainer,
+	Img,
+	ArrowContainer,
+} from './hero.styled';
+import { Github, LinkedIn, DownArrow } from '../../lib/icons';
 
 const Hero = () => {
 	return (
 		<>
 			<OuterContainer>
-				<Img src='images/IMG_1463.png' />
-				<Name>Hi, I&apos;m Joe.</Name>
-				<About>A Web Developer</About>
-				<About>based in New York City.</About>
+				<WebDev>A Web Developer</WebDev>
+				<Name>Hi, I&apos;m Joe</Name>
+				<NYC>based in New York City.</NYC>
+				<IconContainer>
+					<Github />
+					<LinkedIn />
+				</IconContainer>
+				<Img src='images/IMG_1534.jpeg' />
+				<ArrowContainer>
+					<DownArrow />
+				</ArrowContainer>
 			</OuterContainer>
 		</>
 	);
