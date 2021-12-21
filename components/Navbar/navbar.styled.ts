@@ -7,6 +7,9 @@ export const OuterContainer = styled.div`
 
 	@media (min-width: 765px) {
 	}
+
+	@media (min-width: 1440px) {
+	}
 `;
 
 export const NavLinks = styled.div`
@@ -20,7 +23,33 @@ export const NavLinks = styled.div`
 
 	@media (min-width: 765px) {
 		justify-content: end;
-		gap: 4rem;
+	}
+
+	@media (min-width: 1440px) {
+	}
+`;
+
+export const Brand = styled.p`
+	display: none;
+
+	@media (min-width: 765px) {
+		order: 1;
+		margin-right: auto;
+		margin-left: 44px;
+		font-style: italic;
+		font-weight: 500;
+		font-size: 12px;
+		line-height: 16px;
+		display: flex;
+		align-items: center;
+		text-align: center;
+		letter-spacing: 1.35px;
+		text-transform: uppercase;
+		color: ${({ theme }) => theme.white};
+	}
+
+	@media (min-width: 1440px) {
+		font-size: 18px;
 	}
 `;
 
@@ -32,8 +61,13 @@ export const Img = styled.img`
 	border-radius: 100%;
 
 	@media (min-width: 765px) {
-		order: 3;
+		order: 4;
 		margin: 0 3rem 0 0;
+	}
+
+	@media (min-width: 1440px) {
+		width: 106px;
+		height: 106px;
 	}
 `;
 
@@ -51,6 +85,10 @@ export const Projects = styled.a`
 
 	@media (min-width: 765px) {
 	}
+
+	@media (min-width: 1440px) {
+		font-size: 18px;
+	}
 `;
 
 export const Contact = styled.a`
@@ -60,10 +98,14 @@ export const Contact = styled.a`
 
 	&:hover {
 		transition: 0.3s;
-		color: ${({ theme }) => theme.primary};
+		color: ${({ theme }) => theme.lightGreen};
 	}
 
 	@media (min-width: 765px) {
 		order: 2;
+	}
+
+	@media (min-width: 1440px) {
+		font-size: 18px;
 	}
 `;

@@ -4,6 +4,7 @@ import { useRouter } from 'next/router';
 import {
 	OuterContainer,
 	NavLinks,
+	Brand,
 	Img,
 	Projects,
 	Contact,
@@ -21,6 +22,7 @@ const Navbar = () => {
 		<>
 			<OuterContainer>
 				<NavLinks>
+					<Brand>Joe McCann</Brand>
 					<Img src='images/IMG_1463.png' />
 					<Projects href={href}>{link}</Projects>
 					<Contact href='mailto:tojmccann@gmail.com'>Contact</Contact>
