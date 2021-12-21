@@ -27,10 +27,11 @@ const theme = {
 	secondary: '#97aabd',
 	teriary: '#314455',
 	white: '#fff',
-	lightGreen: '#86c232',
-	darkGreen: '#61892f',
+	black: '#000000',
+	lightGreen: '#86C232',
+	darkGreen: '#61892F',
 	lightGrey: '#6b6e70',
-	darkGrey: '#474B4F',
+	darkGrey: '#474B4f',
 };
 
 function MyApp({ Component, pageProps }: AppProps) {

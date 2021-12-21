@@ -5,7 +5,7 @@ export const OuterContainer = styled.div`
 	flex-direction: column;
 	align-items: center;
 	justify-content: start;
-	height: 100vh;
+	height: 89vh;
 	width: 100vw;
 	margin-top: 79.8px;
 

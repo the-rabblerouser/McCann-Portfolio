@@ -6,31 +6,44 @@ export const Container = styled.div<ConnectStyledProps>`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: start;
 	height: 20vh;
 	width: 100vw;
 	@media (min-width: 810px) {
-		height: 20vh;
 	}
 `;
 
 export const ConnectParagraph = styled.p`
+	align-self: center;
+	width: 360px;
+	height: 44px;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 25px;
+	text-align: center;
+	margin: 25px 0 0 0;
 	color: ${({ theme }) => theme.white};
-	font-size: 1rem;
 
 	@media (min-width: 810px) {
-		font-size: 1.2rem;
 	}
 `;
 
 export const Email = styled.a`
+	width: 360px;
+	height: 18px;
+	margin: 48px 0 0 0;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 25px;
+	text-align: center;
 	color: ${({ theme }) => theme.white};
-	font-size: 1rem;
-	margin-top: 0.4rem;
-	text-decoration: underline;
 
 	&:hover {
-		transition: 0.3s;
-		color: ${({ theme }) => theme.primary};
+		text-decoration: underline;
+		color: ${({ theme }) => theme.lightGreen};
+		transition: text-decoration 0.3s, color 0.3s;
 	}
 
 	@media (min-width: 810px) {
@@ -42,9 +55,10 @@ export const LinksContainer = styled.div`
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-evenly;
-	width: 18rem;
+	width: 375px;
+	height: 32px;
+	margin: 15% 0 0 0;
 	text-align: center;
-	margin-top: 3.5rem;
 
 	@media (min-width: 810px) {
 		margin-top: 5rem;
@@ -53,24 +67,37 @@ export const LinksContainer = styled.div`
 `;
 
 export const MediaLink = styled.a`
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 16px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	letter-spacing: 1.35px;
 	color: ${({ theme }) => theme.white};
-	font-size: 0.8rem;
 
 	&:hover {
 		transition: 0.3s;
-		color: ${({ theme }) => theme.primary};
+		color: ${({ theme }) => theme.lightGreen};
 	}
 
 	@media (min-width: 810px) {
-		font-size: 1rem;
 	}
 `;
 
 export const Brand = styled.p`
+	font-style: italic;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 16px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	letter-spacing: 1.35px;
+	text-transform: uppercase;
 	color: ${({ theme }) => theme.white};
-	font-size: 0.7rem;
 
 	@media (min-width: 810px) {
-		font-size: 0.8rem;
 	}
 `;

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const OuterContainer = styled.div`
-	height: 85.2px;
+	height: 11vh;
 	width: 100vw;
 	margin-top: 2rem;
 
@@ -44,7 +44,7 @@ export const Projects = styled.a`
 
 	&:hover {
 		transition: 0.3s;
-		color: ${({ theme }) => theme.primary};
+		color: ${({ theme }) => theme.lightGreen};
 	}
 
 	@media (min-width: 811px) {

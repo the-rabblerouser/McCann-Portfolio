@@ -1,28 +1,38 @@
 import React from 'react';
+import Link from 'next/link';
 
 import {
 	AboutContainer,
-	Paragraph,
+	AboutMe,
+	ToolsContainer,
+	Tool,
 	LinksContainer,
 	MediaLink,
+	WebDeveloper,
+	ProjectsButton,
 } from './aboutme.styled';
 
 const About = () => {
 	return (
 		<>
 			<AboutContainer>
-				<Paragraph>
-					I am a fullstack Web Devloper with a focus on frontend development.
-				</Paragraph>
-				<Paragraph>
-					My preferred tools are Typescript, React.js, Next.js, Node.js, and
-					MongoDB.
-				</Paragraph>
-				<Paragraph>
-					I am currently living in NYC and looking to join a new team.
-				</Paragraph>
+				<AboutMe color='#474B4f' margin='7px 0 0 0'>
+					My preffered tools are
+				</AboutMe>
+				<ToolsContainer margin='0 0 0 1rem'>
+					<Tool color='#61892f'>Typescript</Tool>
+					<Tool color='#000000'>React.js</Tool>
+					<Tool color='#61892f'>Next.js</Tool>
+				</ToolsContainer>
+				<ToolsContainer margin='0 0 0 3rem'>
+					<Tool color='#86c232'>Node.js</Tool>
+					<Tool color='#474B4F'>Express.js</Tool>
+					<Tool color='#000000'>MongoDB</Tool>
+				</ToolsContainer>
+				<AboutMe color='#6b6e70' margin='0'>
+					Check me out on
+				</AboutMe>
 				<LinksContainer>
-					<MediaLink href='mailto:tojmccann@gmail.com'>Email</MediaLink>
 					<MediaLink href='https://github.com/the-rabblerouser'>
 						Github
 					</MediaLink>
@@ -30,6 +40,10 @@ const About = () => {
 						LinkedIn
 					</MediaLink>
 				</LinksContainer>
+				<WebDeveloper>FullStack Web Devloper Frontend Focus</WebDeveloper>
+				<Link href='/projects' passHref>
+					<ProjectsButton>Personal Projects</ProjectsButton>
+				</Link>
 			</AboutContainer>
 		</>
 	);

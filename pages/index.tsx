@@ -1,5 +1,4 @@
 import type { NextPage } from 'next';
-import Link from 'next/link';
 
 import styled from 'styled-components';
 import Particles from 'react-tsparticles';
@@ -8,11 +7,6 @@ import Navbar from '../components/Navbar/Navbar';
 import Hero from '../components/Hero/Hero';
 import AboutMe from '../components/AboutMe/About';
 import Connect from '../components/Connect/Connect';
-
-import {
-	ProjectsButtonContainer,
-	ProjectsButton,
-} from '../components/Projects/projects.styled';
 
 import { particleOptions } from '../lib/utils/particleOptions';
 
@@ -32,11 +26,6 @@ const Home: NextPage = () => {
 				<Navbar />
 				<Hero />
 				<AboutMe />
-				<ProjectsButtonContainer>
-					<Link href='/projects' passHref>
-						<ProjectsButton>View Projects</ProjectsButton>
-					</Link>
-				</ProjectsButtonContainer>
 				<Connect background={'#9e5a63'} />
 			</AppContainer>
 		</>

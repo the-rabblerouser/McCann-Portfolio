@@ -15,10 +15,13 @@ const Connect = ({ background }: ConnectStyledProps) => {
 	return (
 		<>
 			<Container background={background}>
-				<ConnectParagraph>Lets Build Something Together</ConnectParagraph>
+				<ConnectParagraph>
+					If you are looking for a developer or just trying to connect, feel
+					free to reach out.
+				</ConnectParagraph>
 				<Email href='mailto:tojmccann@gmail.com'>tojmccann@gmail.com</Email>
 				<LinksContainer>
-					<Brand>Joe McCann {new Date().getFullYear()}</Brand>
+					<Brand>Joe McCann</Brand>
 					<MediaLink href='https://github.com/the-rabblerouser'>
 						Github
 					</MediaLink>
