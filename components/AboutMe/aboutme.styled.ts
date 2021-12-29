@@ -58,7 +58,7 @@ export const ToolsContainerOne = styled.div`
 	justify-content: start;
 	height: 50px;
 	width: 100vw;
-	margin: 0 0 0 3rem;
+	margin: 0 0 0 1.5rem;
 
 	@media (min-width: 765px) {
 		margin: 0 0 0 4rem;
@@ -77,7 +77,7 @@ export const ToolsContainerTwo = styled.div`
 	justify-content: start;
 	height: 50px;
 	width: 100vw;
-	margin: 0 0 0 6rem;
+	margin: 0 0 0 2.4rem;
 
 	@media (min-width: 765px) {
 		margin: 0 0 0 8rem;
@@ -214,7 +214,7 @@ export const WebDeveloper = styled.p`
 	@media (min-width: 1440px) {
 		width: 528px;
 		height: 134px;
-		margin: 0 2rem 0 0;
+		margin: 0 0 0 60%;
 		font-size: 45px;
 		line-height: 64px;
 	}
@@ -223,6 +223,7 @@ export const WebDeveloper = styled.p`
 export const ProjectsButton = styled.a`
 	align-self: center;
 	display: flex;
+
 	justify-content: center;
 	align-items: center;
 	width: 200px;

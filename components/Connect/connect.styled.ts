@@ -33,7 +33,7 @@ export const ConnectParagraph = styled.p`
 	@media (min-width: 765px) {
 		width: 540px;
 		height: 66px;
-		margin: 0 0 0 0;
+		margin: 3rem 0 0 0;
 		font-size: 24px;
 	}
 
