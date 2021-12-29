@@ -23,7 +23,7 @@ const Navbar = () => {
 			<OuterContainer>
 				<NavLinks>
 					<Brand>Joe McCann</Brand>
-					<Img src='images/IMG_1463.png' />
+					<Img src='images/IMG_0082.png' />
 					<Projects href={href}>{link}</Projects>
 					<Contact href='mailto:tojmccann@gmail.com'>Contact</Contact>
 				</NavLinks>
