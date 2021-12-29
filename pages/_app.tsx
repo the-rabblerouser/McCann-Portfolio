@@ -23,9 +23,6 @@ a {
 `;
 
 const theme = {
-	primary: '#c96567',
-	secondary: '#97aabd',
-	teriary: '#314455',
 	white: '#fff',
 	black: '#000000',
 	lightGreen: '#86C232',

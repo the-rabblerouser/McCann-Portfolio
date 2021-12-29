@@ -15,7 +15,7 @@ export const ModalMain = styled.div`
 	flex-direction: column;
 	justify-content: start;
 	align-items: start;
-	background-color: ${({ theme }) => theme.teriary};
+	background-color: ${({ theme }) => theme.darkGrey};
 	height: 55%;
 	width: 95%;
 
@@ -83,7 +83,7 @@ export const ModalDescription = styled.p`
 export const Link = styled.a`
 	&:hover {
 		transition: 0.3s;
-		color: ${({ theme }) => theme.primary};
+		color: ${({ theme }) => theme.lightGreen};
 	}
 
 	@media (min-width: 811px) {

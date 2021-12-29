@@ -2,13 +2,13 @@ import type { NextPage } from 'next';
 import React from 'react';
 
 import styled from 'styled-components';
-import Particles from 'react-tsparticles';
+// import Particles from 'react-tsparticles';
 
 import Navbar from '../components/Navbar/Navbar';
 import Projects from '../components/Projects/Projects';
 import Connect from '../components/Connect/Connect';
 
-import { particleOptions } from '../lib/utils/particleOptions';
+// import { particleOptions } from '../lib/utils/particleOptions';
 
 const AppContainer = styled.div`
 	position: absolute;
@@ -21,7 +21,7 @@ const AppContainer = styled.div`
 const projects: NextPage = () => {
 	return (
 		<>
-			<Particles id='tsparticles' options={particleOptions} />
+			{/* <Particles id='tsparticles' options={particleOptions} /> */}
 			<AppContainer>
 				<Navbar />
 				<Projects />
