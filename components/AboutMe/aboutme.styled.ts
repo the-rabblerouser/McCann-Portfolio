@@ -58,7 +58,7 @@ export const ToolsContainerOne = styled.div`
 	justify-content: start;
 	height: 50px;
 	width: 100vw;
-	margin: 0 0 0 1.5rem;
+	margin: 0 0 0 3rem;
 
 	@media (min-width: 765px) {
 		margin: 0 0 0 4rem;
@@ -77,7 +77,7 @@ export const ToolsContainerTwo = styled.div`
 	justify-content: start;
 	height: 50px;
 	width: 100vw;
-	margin: 0 0 0 3rem;
+	margin: 0 0 0 6rem;
 
 	@media (min-width: 765px) {
 		margin: 0 0 0 8rem;
