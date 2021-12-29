@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 
-import useSWR from 'swr';
 import { useTransition } from 'react-spring';
 
 import {
@@ -13,10 +12,9 @@ import {
 
 import Modal from './Modal/Modal';
 
-import { fetcher } from '../../lib/utils/fetcher';
 import { ProjectTypes } from './types/projectTypes';
 
-const Projects = () => {
+const Projects = ({ data }: { data: ProjectTypes[] }) => {
 	const [showModal, setshowModal] = useState<boolean>(false);
 	const [projectData, setprojectData] = useState<{}>({});
 
@@ -33,14 +31,6 @@ const Projects = () => {
 		},
 		leave: { opacity: 0 },
 	});
-
-	const { data, error } = useSWR<ProjectTypes[]>(
-		'/api/personalProjects',
-		fetcher
-	);
-
-	if (error) return <div>failed to load</div>;
-	if (!data) return <></>;
 
 	return (
 		<Body showModal={showModal}>
