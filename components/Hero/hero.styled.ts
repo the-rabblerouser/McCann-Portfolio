@@ -42,6 +42,7 @@ export const WebDev = styled.p`
 	@media (min-width: 1440px) {
 		width: 356px;
 		height: 80px;
+		font-size: 24px;
 		line-height: 80px;
 		margin: 0 0 0 144px;
 	}
@@ -150,6 +151,7 @@ export const Img = styled.img`
 	@media (min-width: 1440px) {
 		width: 1352px;
 		height: 743px;
+		margin-top: 5rem;
 	}
 `;
 

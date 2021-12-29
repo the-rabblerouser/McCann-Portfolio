@@ -18,10 +18,11 @@ export const AboutContainer = styled.div`
 `;
 
 export const AboutMe = styled.p`
+	align-self: center;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 100%;
+	width: 95%;
 	height: 64.47px;
 	margin: 7px 0 0 0;
 	background: ${({ theme }) => theme.darkGrey};
@@ -32,6 +33,7 @@ export const AboutMe = styled.p`
 	letter-spacing: 1.35px;
 
 	@media (min-width: 765px) {
+		align-self: start;
 		width: 50vw;
 		margin: 1rem 0 0 2rem;
 		text-align: center;
@@ -56,7 +58,7 @@ export const ToolsContainerOne = styled.div`
 	justify-content: start;
 	height: 50px;
 	width: 100vw;
-	margin: 0 0 0 1rem;
+	margin: 0 0 0 1.5rem;
 
 	@media (min-width: 765px) {
 		margin: 0 0 0 4rem;
@@ -113,10 +115,11 @@ export const Tool = styled.p`
 `;
 
 export const CheckOut = styled.p`
+	align-self: center;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 100%;
+	width: 90%;
 	height: 64.47px;
 	margin: 0;
 	background: ${({ theme }) => theme.lightGrey};
@@ -127,6 +130,7 @@ export const CheckOut = styled.p`
 	letter-spacing: 1.35px;
 
 	@media (min-width: 765px) {
+		align-self: start;
 		width: 50%;
 		margin: 0 0 0 3.8rem;
 		text-align: center;

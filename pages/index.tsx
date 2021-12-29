@@ -1,14 +1,14 @@
 import type { NextPage } from 'next';
 
 import styled from 'styled-components';
-import Particles from 'react-tsparticles';
+// import Particles from 'react-tsparticles';
 
 import Navbar from '../components/Navbar/Navbar';
 import Hero from '../components/Hero/Hero';
 import AboutMe from '../components/AboutMe/About';
 import Connect from '../components/Connect/Connect';
 
-import { particleOptions } from '../lib/utils/particleOptions';
+// import { particleOptions } from '../lib/utils/particleOptions';
 
 const AppContainer = styled.div`
 	position: absolute;

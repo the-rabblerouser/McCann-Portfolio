@@ -7,7 +7,7 @@ export const particleOptions: RecursivePartial<object> = {
 	},
 	background: {
 		color: {
-			value: '314455',
+			value: '222629',
 		},
 	},
 	fpsLimit: 100,
@@ -42,10 +42,10 @@ export const particleOptions: RecursivePartial<object> = {
 	},
 	particles: {
 		color: {
-			value: '#c96567',
+			value: '#61892F',
 		},
 		links: {
-			color: '#c96567',
+			color: '#61892F',
 			distance: 50,
 			enable: true,
 			opacity: 1,
@@ -55,7 +55,7 @@ export const particleOptions: RecursivePartial<object> = {
 			enable: true,
 		},
 		move: {
-			direction: 'top',
+			direction: 'bottom',
 			enable: true,
 			outMode: 'out',
 			random: false,
@@ -65,7 +65,7 @@ export const particleOptions: RecursivePartial<object> = {
 		number: {
 			density: {
 				enable: true,
-				value_area: 5000,
+				value_area: 8000,
 			},
 			value: 800,
 		},
