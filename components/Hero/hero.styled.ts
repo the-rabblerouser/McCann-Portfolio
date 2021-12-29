@@ -137,6 +137,22 @@ export const IconContainer = styled.div`
 	}
 `;
 
+export const Icon = styled.a`
+	color: ${({ theme }) => theme.white};
+
+	&:hover {
+		text-decoration: underline;
+		color: ${({ theme }) => theme.lightGreen};
+		transition: text-decoration 0.3s, color 0.3s;
+	}
+
+	@media (min-width: 765px) {
+	}
+
+	@media (min-width: 1440px) {
+	}
+`;
+
 export const Img = styled.img`
 	width: 345.6px;
 	height: 190.03px;

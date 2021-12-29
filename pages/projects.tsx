@@ -1,5 +1,6 @@
 import type { NextPage } from 'next';
 import React from 'react';
+import Link from 'next/link';
 
 import styled from 'styled-components';
 // import Particles from 'react-tsparticles';

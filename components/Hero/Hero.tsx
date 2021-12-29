@@ -6,6 +6,7 @@ import {
 	WebDev,
 	NYC,
 	IconContainer,
+	Icon,
 	Img,
 	ArrowContainer,
 } from './hero.styled';
@@ -19,8 +20,12 @@ const Hero = () => {
 				<Name>Hi, I&apos;m Joe</Name>
 				<NYC>based in New York City.</NYC>
 				<IconContainer>
-					<Github />
-					<LinkedIn />
+					<Icon href='https://github.com/the-rabblerouser'>
+						<Github />
+					</Icon>
+					<Icon href='https://www.linkedin.com/in/joseph-mccann-77402a88/'>
+						<LinkedIn />
+					</Icon>
 				</IconContainer>
 				<Img src='images/IMG_1534.jpeg' />
 				<ArrowContainer>
