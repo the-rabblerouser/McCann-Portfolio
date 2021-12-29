@@ -215,7 +215,7 @@ export const WebDeveloper = styled.p`
 		width: 528px;
 		height: 134px;
 		margin: 0 2rem 0 0;
-		font-size: 46px;
+		font-size: 45px;
 		line-height: 64px;
 	}
 `;

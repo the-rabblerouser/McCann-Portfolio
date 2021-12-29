@@ -38,7 +38,7 @@ const About = () => {
 						LinkedIn
 					</MediaLink>
 				</LinksContainer>
-				<WebDeveloper>FullStack Web Devloper Frontend Focus</WebDeveloper>
+				<WebDeveloper>FullStack Web Devloper</WebDeveloper>
 				<Link href='/projects' passHref>
 					<ProjectsButton>Personal Projects</ProjectsButton>
 				</Link>
