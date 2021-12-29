@@ -38,6 +38,7 @@ export const ProjectsContainer = styled.div`
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 1fr 1fr 1fr;
+	gap: 0.5rem;
 	height: 100%;
 	width: 100vw;
 
