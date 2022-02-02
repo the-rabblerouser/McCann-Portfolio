@@ -9,7 +9,7 @@ My portfolio site is made with **Typescript, React.js, Next.js, Node.js and Mong
 ## Screenshots
 
 ### Landing Page!
-<img src="https://raw.githubusercontent.com/the-rabblerouser/McCann-Portfolio/main/public/images/Screen%20Shot%202021-12-08%20at%204.21.29%20PM.png" />
+<img src="https://raw.githubusercontent.com/the-rabblerouser/McCann-Portfolio/main/public/images/Screen%20Shot%202022-02-02%20at%204.27.51%20PM.png" />
 
 ## Todo
 
